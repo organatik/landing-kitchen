@@ -56,12 +56,16 @@ $font-small: 'Montserrat Alternates', sans-serif;
   background: $btnBg;
   color: $btnColor;
 }
+
 .nj-salatText{
   width: fit-content;
-  height: 120%;
   padding: 4px;
   background: $greenText;
   color: $mainColor;
+  font-family: $font-large;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .nj-p{
@@ -71,6 +75,14 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
   line-height: 150%;
   color: $pColor;
+}
+.nj-textTransparent{
+  font-size: 18px;
+  font-family: $font-small;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: $greenText;
 }
 .nj-container{
   max-width: 1240px;
