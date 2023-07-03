@@ -1,0 +1,9 @@
+@import "../colors.scss";
+
+.btn{
+  background: $btnBg !important;
+  border-radius: 30px;
+  padding: 17px 30px;
+  color: $btnColor !important;
+}
+

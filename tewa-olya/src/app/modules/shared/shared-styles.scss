@@ -49,12 +49,19 @@ $font-small: 'Montserrat Alternates', sans-serif;
 }
 
 .nj-greenText{
-  background: $greenText;
   width: fit-content;
   height: 120%;
   border-radius: 12px;
   padding: 8px;
-  color: #ffff;
+  background: $btnBg;
+  color: $btnColor;
+}
+.nj-salatText{
+  width: fit-content;
+  height: 120%;
+  padding: 4px;
+  background: $greenText;
+  color: $mainColor;
 }
 
 .nj-p{

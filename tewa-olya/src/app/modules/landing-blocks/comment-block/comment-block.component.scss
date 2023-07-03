@@ -1,0 +1,12 @@
+@import "../../shared/colors.scss";
+
+.comment-block{
+  .box{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    .item{
+      cursor: pointer;
+    }
+  }
+}
