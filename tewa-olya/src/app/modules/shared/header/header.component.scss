@@ -1,3 +1,19 @@
-p {
-  color: red;
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+
+  img{
+    width: 80px;
+    height: 80px;
+    min-height: 100%;
+    max-width: 100%;
+  }
+
+  .header-nav{
+    .link{
+      margin-right: 40px;
+    }
+  }
 }

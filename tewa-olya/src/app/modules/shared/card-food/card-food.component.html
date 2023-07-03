@@ -1,0 +1,14 @@
+<div class="box nj-border">
+  <img class="img" [src]="cardData?.img" alt="">
+  <h3 class="title nj-h3 nj-textCenter">{{cardData?.title}}</h3>
+  <div class="box-text">
+  <p class="nj-p">Ви отримаєте<span class="nj-greenText">{{cardData?.firstDescription}}</span></p>
+  <p class="text nj-p">{{cardData?.description}}</p>
+  </div>
+  <div class="price-box">
+  <p class="price price-text nj-h4">Всього за:</p>
+  <p class="number nj-h3 nj-textCenter">{{cardData?.price}}</p>
+    <span class="currency">₴</span>
+  </div>
+  <button class="btn card-btn">Купити</button>
+</div>
