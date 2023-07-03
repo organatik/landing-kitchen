@@ -1,0 +1,19 @@
+<!--<div class="box" [ngClass]="{'flex-reverse': isEvent}">-->
+<div class="box" [ngStyle]="{'flex-direction': isRevers ? 'row-reverse' : 'row'}">
+
+  <div class="sub-box">
+    <h3 class="sub-title nj-h3">{{singleMenu?.title}}</h3>
+    <p class="text nj-p">{{singleMenu?.firstText}} <span class="nj-greenText">{{singleMenu?.greenText}}</span>
+      <br>
+      {{singleMenu?.description}}
+    </p>
+    <div class="price-box">
+      <button class="btn main_btn">Купити</button>
+      <p class="number nj-h3 nj-textCenter">{{singleMenu?.price}}<span class="currency">{{singleMenu?.currency}}</span></p>
+    </div>
+  </div>
+
+  <div class="img">
+      <img [src]="singleMenu?.image" alt="">
+  </div>
+</div>
