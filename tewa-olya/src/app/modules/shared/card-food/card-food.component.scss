@@ -5,7 +5,10 @@
   .box-text{
     padding: 0 10px;
     .first-text{
-      color: $pColor;
+      text-align: center;
+      span{
+        margin-left: 5%;
+      }
     }
     .text{
       min-height: 150px;
@@ -36,10 +39,8 @@
     .currency{
       font-size: 22px;
     }
-
   }
-  .card-btn{
-    display: block;
-    margin: 0 auto;
+  .btn{
+    text-align: center;
   }
 }

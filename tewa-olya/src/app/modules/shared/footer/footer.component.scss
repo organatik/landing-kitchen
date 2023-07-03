@@ -1,0 +1,58 @@
+@import "../../shared/colors.scss";
+
+.footer{
+  background: $background;
+  padding: 100px 70px;
+
+  .footer-box{
+    display: flex;
+    .logo-column{
+      flex: 0 1 30%;
+      padding-left: 10%;
+      .box-logo{
+        .logo{
+          width: 92px;
+          display: block;
+        }
+      }
+    }
+    .box-information{
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+  }
+}
+.title{
+  padding-bottom: 20px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $textTransparent;
+  a{
+    color: $textTransparent;
+  }
+
+  .row-contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.bottom{
+  background-image: url("../../../../assets/images/footer-bg.svg");
+  height: 60px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    color: $btnColor;
+  }
+}

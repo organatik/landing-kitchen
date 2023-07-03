@@ -3,12 +3,12 @@
 
   <div class="sub-box">
     <h3 class="sub-title nj-h3">{{singleMenu?.title}}</h3>
-    <p class="text nj-p">{{singleMenu?.firstText}} <span class="nj-greenText">{{singleMenu?.greenText}}</span>
+    <p class="text nj-p">{{singleMenu?.firstText}} <span class="nj-salatText">{{singleMenu?.greenText}}</span>
       <br>
       {{singleMenu?.description}}
     </p>
     <div class="price-box">
-      <button class="btn main_btn">Купити</button>
+      <app-main-button [text]="'Купити'"></app-main-button>
       <p class="number nj-h3 nj-textCenter">{{singleMenu?.price}}<span class="currency">{{singleMenu?.currency}}</span></p>
     </div>
   </div>

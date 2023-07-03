@@ -2,7 +2,7 @@
   <img class="img" [src]="cardData?.img" alt="">
   <h3 class="title nj-h3 nj-textCenter">{{cardData?.title}}</h3>
   <div class="box-text">
-  <p class="nj-p">Ви отримаєте<span class="nj-greenText">{{cardData?.firstDescription}}</span></p>
+  <p class="nj-p first-text">Ви отримаєте<span class="nj-salatText">{{cardData?.firstDescription}}</span></p>
   <p class="text nj-p">{{cardData?.description}}</p>
   </div>
   <div class="price-box">
@@ -10,5 +10,8 @@
   <p class="number nj-h3 nj-textCenter">{{cardData?.price}}</p>
     <span class="currency">₴</span>
   </div>
-  <button class="btn card-btn">Купити</button>
+  <div class="btn">
+    <app-main-button [text]="'Замовити'"></app-main-button>
+  </div>
+
 </div>

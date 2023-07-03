@@ -1,0 +1,13 @@
+<section class="menu-block">
+  <div class="nj-container">
+    <h2 class="title nj-h2 pd-title nj-textCenter">Cпеціальна пропозиція</h2>
+    <div class="box">
+
+       <div class="item" *ngFor="let item of menu">
+        <app-card-food [cardData]="item"></app-card-food>
+      </div>
+
+    </div>
+  </div>
+</section>
+

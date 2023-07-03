@@ -1,0 +1,26 @@
+@import "../../shared/colors.scss";
+
+.comment-block{
+  .box{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    padding-bottom: 50px;
+    .item{
+      cursor: pointer;
+    }
+  }
+  .box-arrows{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    .material-symbols-outlined{
+      font-size: 55px;
+      color: $btnBg;
+    }
+    .right{
+      transform: rotate(180deg);
+      color: $greenText;
+    }
+  }
+}
