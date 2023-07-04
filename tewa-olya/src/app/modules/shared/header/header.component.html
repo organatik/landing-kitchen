@@ -1,14 +1,21 @@
-<header class="header">
+<header class="header" [class.headerGreen]="menuHeaderVariable">
   <a href="" class="header-logo">
     <img src="../../../../assets/images/logo.svg" alt="">
   </a>
-
-  <nav class="header-nav">
+  <div class="menu-btn" [class.menu-btn-Class]="menuBtnVariable" (click)="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="header-nav" [class.menuClass] ="menuVariable">
     <a href="" class="link nj-p">Про нас</a>
     <a href="" class="link nj-p">Меню</a>
     <a href="" class="link nj-p">Контакти</a>
+    <div class="btn-box">
       <app-main-button [text]="'Замовити'"></app-main-button>
+    </div>
 
   </nav>
 
 </header>
+
