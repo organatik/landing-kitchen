@@ -3,16 +3,31 @@
 .why-we{
   background: $background;
   padding-bottom: 100px;
+
   .main-title{
     text-align: center;
   }
   .box{
     display: flex;
     justify-content: space-around;
+    @media (max-width: 1024px){
+      justify-content: inherit;
+      @media (max-width: 600px){
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
     .items{
-      flex: 0 1 30%;
+      flex: 0 1 35%;
       text-align: center;
       padding-bottom: 50px;
+      @media (max-width: 1024px){
+        padding-bottom: 0;
+        @media (max-width: 600px){
+          border-radius: 20px;
+          box-shadow: 5px 2px 10px $cartShadow;
+        }
+      }
       img{
         width: 100px;
         height: 100px;
@@ -20,12 +35,57 @@
       }
       .title{
         padding: 30px 0 20px 0;
+        @media (max-width: 1024px){
+          padding: 0 0 5px 0;
+        }
       }
+
+    }
+    .box-content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @media (max-width: 600px){
+        flex-direction: row;
+
+      }
+      .top-items{
+        @media (max-width: 600px){
+          flex: 0 1 50%;
+        }
+      }
+      .bottom-items{
+        text-align: center;
+        @media (max-width: 1024px){
+          flex: 0 1 35%;
+          @media (max-width: 600px){
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .bottom-number{
+          font-size: 48px;
+          padding-bottom: 10px;
+          color: $greenText;
+          @media (max-width: 767px){
+            font-size: 36px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+
       .text{
         text-align: left;
         max-width: 280px;
         font-size: 15px;
+        @media (max-width: 1024px){
+          font-size: 12px;
+        }
       }
+
       .span{
         background-image: url("../../../../assets/images/done.svg");
         background-position: center center;
@@ -33,26 +93,29 @@
         background-size: contain;;
         width: 20px;
         height: 20px;
+        @media (max-width: 767px){
+          flex: 0 0 auto;
+        }
       }
-      .box-text{
+
+      .top-text{
         display: flex;
         align-items: center;
         height: 45px;
         gap: 10px;
         padding-left: 50px;
+        @media (max-width: 1024px){
+          padding-left: 0;
+          gap: 5px;
+          margin: 0 10px 5px 0;
+          @media (max-width: 767px){
+            height: 50px;
+          }
+        }
       }
-
     }
 
   }
-  .bottom-box{
-    .bottom-items{
-      text-align: center;
-      .bottom-number{
-        font-size: 48px;
-        padding-bottom: 10px;
-        color: $greenText;
-      }
-    }
+
   }
-}
+

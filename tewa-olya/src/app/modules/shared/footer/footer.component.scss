@@ -3,16 +3,37 @@
 .footer{
   background: $background;
   padding: 100px 70px;
-
+  @media (max-width: 1024px){
+    padding: 60px 20px;
+  }
   .footer-box{
     display: flex;
+    @media (max-width: 767px){
+      gap: 30px;
+      @media (max-width: 500px){
+        gap: 0;
+      }
+    }
     .logo-column{
       flex: 0 1 30%;
       padding-left: 10%;
+      @media (max-width: 1200px){
+        padding-left: 0;
+        @media (max-width: 1024px){
+          flex: 0 1 20%;
+          @media (max-width: 500px){
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
       .box-logo{
         .logo{
           width: 92px;
           display: block;
+          @media (max-width: 500px){
+            width: 40px;
+          }
         }
       }
     }
@@ -20,12 +41,23 @@
       flex: 1 1 auto;
       display: flex;
       justify-content: space-evenly;
-
+      @media (max-width: 1024px){
+        justify-content: space-between;
+        a{
+          font-size: 15px;
+        }
+      }
     }
   }
 }
 .title{
   padding-bottom: 20px;
+  @media (max-width: 767px){
+    font-size: 17px;
+    @media (max-width: 767px){
+      font-size: 15px;
+    }
+  }
 }
 
 .links{
@@ -41,6 +73,17 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    a{
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  .row-contact:hover a{
+
+    @media (max-width: 767px){
+      display: block;
+    }
   }
 }
 
@@ -51,7 +94,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   p{
     color: $btnColor;
   }

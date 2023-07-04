@@ -8,15 +8,28 @@
     padding-bottom: 50px;
     .item{
       cursor: pointer;
+      @media (max-width: 1024px) {
+        flex: 0 1 45%;
+      }
     }
   }
   .box-arrows{
     display: flex;
     justify-content: center;
     padding-bottom: 70px;
+    @media (max-width: 767px){
+      padding-bottom: 35px;
+      @media (max-width: 500px){
+        padding-bottom: 25px;
+      }
+    }
+
     .material-symbols-outlined{
       font-size: 55px;
       color: $btnBg;
+      @media (max-width: 767px){
+        font-size: 35px;
+      }
     }
     .right{
       transform: rotate(180deg);
