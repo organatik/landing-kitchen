@@ -11,6 +11,20 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 1200px) {
+    font-size: 40px;
+    line-height: 135%;
+    @media (max-width: 1024px){
+      font-size: 32px;
+      @media (max-width: 767px){
+        font-size: 24px;
+        @media (max-width: 500px){
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
 .nj-h2{
@@ -20,7 +34,22 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+
+  @media (max-width: 1200px) {
+    font-size: 40px;
+    line-height: 135%;
+    @media (max-width: 1024px){
+      font-size: 32px;
+      @media (max-width: 767px){
+        font-size: 24px;
+        @media (max-width: 500px){
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
+
 .nj-h3{
   font-family: $font-large;
   color: $mainColor;
@@ -28,6 +57,19 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 70%;
+  @media (max-width: 1200px) {
+    font-size: 30px;
+    line-height: 135%;
+    @media (max-width: 1024px){
+      font-size: 28px;
+      @media (max-width: 767px){
+        font-size: 20px;
+        @media (max-width: 500px){
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 .nj-h4{
@@ -37,6 +79,12 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
+    @media (max-width: 1024px){
+      font-size: 18px;
+      @media (max-width: 500px){
+        font-size: 15px;
+    }
+  }
 }
 .nj-h5{
   font-family: $font-large;
@@ -75,6 +123,9 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
   line-height: 150%;
   color: $pColor;
+  @media (max-width: 500px){
+    font-size: 15px;
+  }
 }
 .nj-textTransparent{
   font-size: 18px;
@@ -91,6 +142,12 @@ $font-small: 'Montserrat Alternates', sans-serif;
 }
 .pd-title{
   padding:100px 0 30px;
+}
+.pd-titleSmall{
+  padding:50px 0 30px;
+}
+.pd-section{
+  padding-bottom: 50px;
 }
 .subColor{
   color: $subColor;

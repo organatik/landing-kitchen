@@ -1,8 +1,10 @@
+@import "../../shared/colors.scss";
 .single-menu-bloc{
- .even-item{
-  .box{
-    flex-direction: row-reverse;
-  }
- }
+    .item{
+      @media (max-width: 700px) {
+        border-radius: 20px;
+        box-shadow: 5px 2px 10px $cartShadow;
+      }
+    }
 }
 

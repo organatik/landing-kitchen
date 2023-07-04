@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {SharedComponentsModule} from "./modules/shared/shared-components.module";
 import {LandingBlocksModule} from "./modules/landing-blocks/landing-blocks.module";
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,6 +17,7 @@ import {LandingBlocksModule} from "./modules/landing-blocks/landing-blocks.modul
     BrowserAnimationsModule,
     SharedComponentsModule,
     LandingBlocksModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
