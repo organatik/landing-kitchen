@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+ public menuVariable = false;
+ public menuBtnVariable = false
+  public menuHeaderVariable = false
+  openMenu = () => {
+    this.menuVariable = !this.menuVariable;
+    this.menuBtnVariable = !this.menuBtnVariable;
+    this.menuHeaderVariable =! this.menuHeaderVariable
+  }
 }

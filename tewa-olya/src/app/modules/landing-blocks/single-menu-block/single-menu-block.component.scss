@@ -1,5 +1,10 @@
 @import "../../shared/colors.scss";
 .single-menu-bloc{
+  .title{
+    @media (max-width: 500px){
+      padding: 50px 0 0px;
+    }
+  }
     .item{
       @media (max-width: 700px) {
         border-radius: 20px;

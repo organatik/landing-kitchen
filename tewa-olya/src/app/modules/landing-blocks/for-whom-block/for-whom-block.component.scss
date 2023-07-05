@@ -2,22 +2,26 @@
 
 .for-whom{
   background: $background;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  @media (max-width: 600px){
+    padding-bottom: 0px;
+  }
+  .nj-container{
+    @media (max-width: 600px){
+      padding: 0px 5px;
+    }
+  }
   .title{
     text-align: center;
   }
   .box{
     display: flex;
     gap: 50px;
+
     @media (max-width: 1024px){
       flex-wrap: wrap;
-      gap: 20%;
-      @media (max-width: 600px){
-        gap: 10%;
-        @media (max-width: 485px){
-          gap: 1%;
-        }
-      }
+      justify-content: center;
+      gap: 1%;
     }
 
 
@@ -28,27 +32,47 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
     @media (max-width: 1024px){
       padding-bottom: 50px;
-      flex: 0 0 40%
+      flex: 0 0 49%
     }
     img{
       max-width: 70%;
       margin-bottom: 30px;
-      @media (max-width: 767px){
+
+      @media (max-width: 768px){
         max-width: 50%;
+        margin-bottom: 15px;
       }
     }
     .subtitle{
       padding-bottom: 5px;
       @media (max-width: 1024px){
         text-align: center;
+        padding-bottom: 10px;
+        font-size: 18px;
+        @media (max-width: 420px){
+          font-size: 16px;
+          padding-bottom: 2.5px;
+          @media (max-width: 350px){
+            font-size: 12px;
+          }
+        }
       }
     }
     .text{
       text-align: center;
       font-size: 15px;
       width: 200px;
+      @media (max-width: 420px){
+        width: 180px;
+        font-size: 12px;
+        @media (max-width: 350px){
+          width: 140px;
+          font-size: 10px;
+        }
+      }
     }
   }
 }

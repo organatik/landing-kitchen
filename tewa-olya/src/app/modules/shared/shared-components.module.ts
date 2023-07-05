@@ -9,6 +9,8 @@ import { MainButtonComponent } from './main-button/main-button.component';
 import {MatButtonModule} from '@angular/material/button';
 
 
+
+
 @NgModule({
     declarations: [
         HeaderComponent,
@@ -28,7 +30,7 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class SharedComponentsModule { }
