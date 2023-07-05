@@ -4,6 +4,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 20px 70px;
+  z-index: 99;
   @media (max-width: 1024px){
     padding: 10px;
   }
@@ -12,12 +13,17 @@ header{
     height: 80px;
     min-height: 100%;
     max-width: 100%;
+
+
     @media (max-width: 320px){
       width: 50px;
       height: 50px;
     }
   }
   .menu-btn{
+    display: none;
+
+    @media(max-width: 1024px){
     width: 80px;
     height: 80px;
     display: flex;
@@ -37,6 +43,7 @@ header{
            width: 30px;
          }
        }
+    }
   }
   .menu-btn span:nth-child(2){
     margin: 4px 0;
@@ -57,6 +64,7 @@ header{
   .header-nav{
     display: flex;
     text-align: end;
+    flex: 0 1 50%;
     @media (max-width: 1024px) {
       position: absolute;
       right: 0px;
@@ -96,4 +104,5 @@ header{
 }
 .headerGreen{
   background: $greenText;
+  transition: all .5s ease-in;
 }
