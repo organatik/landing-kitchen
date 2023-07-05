@@ -3,6 +3,9 @@
 .why-we{
   background: $background;
   padding-bottom: 100px;
+  @media (max-width: 600px){
+    padding-bottom: 50px;
+  }
 
   .main-title{
     text-align: center;
@@ -32,11 +35,19 @@
         width: 100px;
         height: 100px;
         margin: 0 auto;
+        @media (max-width: 1024px){
+          width: 70px;
+          height: 70px;
+          @media (max-width: 768px){
+            width: 50px;
+            height: 50px;
+          }
+        }
       }
       .title{
         padding: 30px 0 20px 0;
         @media (max-width: 1024px){
-          padding: 0 0 5px 0;
+          padding: 0 0 10px 0;
         }
       }
 
@@ -45,10 +56,14 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      @media (max-width: 600px){
-        flex-direction: row;
 
+      @media (max-width: 1024px){
+          gap: 10px;
+        @media (max-width: 600px){
+          flex-direction: row;
+        }
       }
+
       .top-items{
         @media (max-width: 600px){
           flex: 0 1 50%;
@@ -70,9 +85,15 @@
           font-size: 48px;
           padding-bottom: 10px;
           color: $greenText;
-          @media (max-width: 767px){
-            font-size: 36px;
-            padding-bottom: 5px;
+          @media (max-width: 1024px){
+            font-size: 42px;
+            @media (max-width: 767px){
+              font-size: 36px;
+              padding-bottom: 5px;
+              @media (max-width: 420px){
+                font-size: 32px;
+              }
+            }
           }
         }
       }
@@ -81,8 +102,12 @@
         text-align: left;
         max-width: 280px;
         font-size: 15px;
+
         @media (max-width: 1024px){
           font-size: 12px;
+          @media (max-width: 768px){
+            max-width: 120px;
+          }
         }
       }
 
@@ -108,7 +133,8 @@
           padding-left: 0;
           gap: 5px;
           margin: 0 10px 5px 0;
-          @media (max-width: 767px){
+          justify-content: center;
+          @media (max-width: 768px){
             height: 50px;
           }
         }

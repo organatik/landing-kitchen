@@ -1,21 +1,41 @@
 .profile{
+  padding-bottom: 50px;
+  @media (max-width: 600px){
+    padding-bottom: 30px;
+  }
+
   .box{
     display: flex;
     align-items: center;
     @media (max-width: 600px){
       flex-direction: column;
     }
+    .title{
+      @media (max-width: 600px){
+        padding: 0 0 20px 0;
+      }
+    }
     .content-left{
       flex: 0 1 60%;
+      @media (max-width: 768px){
+        flex: 0 1 80%;
+      }
     }
     .img-box{
-      @media (max-width: 600px){
-        display: flex;
-        justify-content: center;
+      @media (max-width: 768px) {
+        flex: 1 1 50%;
+        @media (max-width: 600px) {
+          display: flex;
+          justify-content: center;
+        }
       }
       img{
-        @media (max-width: 600px){
-          width: 40%;
+        @media (max-width: 768px){
+          width: 87%;
+          flex: 1 1 50%;
+          @media (max-width: 600px){
+            width: 40%;
+          }
         }
       }
     }
