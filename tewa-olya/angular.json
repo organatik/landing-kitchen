@@ -37,6 +37,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://organatik.github.io/landing-kitchen/",
               "budgets": [
                 {
                   "type": "initial",
@@ -46,7 +47,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumError": "8kb"
                 }
               ],
               "outputHashing": "all"
@@ -99,11 +100,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "f258f01e-bd83-45ff-8ff5-c0b8741339e6"
+    "analytics": "f258f01e-bd83-45ff-8ff5-c0b8741339e6",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

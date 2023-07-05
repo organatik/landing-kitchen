@@ -9,12 +9,12 @@ import {CommentInterface} from "../../shared/card-food/interfaces/comment-interf
 export class CommentBlockComponent {
     public content: CommentInterface [] = [
       {
-      img: '../../../assets/images/comments1.svg',
+      img: 'assets/images/comments1.svg',
       title: 'Шевчук Назар',
       description: 'Найращі рецепти, дуже просто та смачно, дякую. Рекомендую брати все меню, бо краще всі разом взяти та заощадити кошти',
       },
       {
-        img: '../../../assets/images/comment2.svg',
+        img: 'assets/images/comment2.svg',
         title: 'Соловський Сергій',
         description: 'Відповідають оперативно, зразу після оплати скидають рецепти, заощадив час та кошти.',
       }
