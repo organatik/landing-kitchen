@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {SingleMenuInterface} from "../card-food/interfaces/single-menu-interface";
 
 
@@ -11,6 +11,7 @@ export class SingleMenuComponent {
 
   @Input() singleMenu: SingleMenuInterface | undefined;
   @Input() isRevers: boolean = false;
+
 
 
 }

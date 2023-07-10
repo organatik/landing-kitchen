@@ -5,6 +5,6 @@ export interface SingleMenuInterface{
   description: string;
   price: number;
   currency: string;
-  image: string;
+  images: string[];
 
 }

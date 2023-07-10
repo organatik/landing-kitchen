@@ -1,6 +1,4 @@
-<!--<div class="box" [ngClass]="{'flex-reverse': isEvent}">-->
 <div class="box" [ngStyle]="{'flex-direction': isRevers ? 'row-reverse' : 'row'}">
-
   <div class="sub-box">
     <h3 class="sub-title nj-h3">{{singleMenu?.title}}</h3>
     <p class="text nj-p">{{singleMenu?.firstText}} <span class="nj-salatText">{{singleMenu?.greenText}}</span>
@@ -14,15 +12,9 @@
   </div>
 
   <div class="img">
-    <app-img-slider header="Stepper Demo">
-      <cdk-step>
-        <img src="assets/images/1.jpeg">
-      </cdk-step>
-      <cdk-step>
-        <img src="assets/images/2.jpeg">
-      </cdk-step>
-    </app-img-slider>
-
-<!--      <img [src]="singleMenu?.image" alt="">-->
+    <app-swiper-carousel [singleMenu]="singleMenu"></app-swiper-carousel>
   </div>
+
 </div>
+
+
