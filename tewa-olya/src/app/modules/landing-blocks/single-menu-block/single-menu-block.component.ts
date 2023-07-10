@@ -15,7 +15,7 @@ export class SingleMenuBlockComponent {
         description: 'з переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного сніданку.',
         price: 99,
         currency: '₴',
-        image: 'assets/images/1.svg'
+        image: 'assets/images/1.jpeg'
       },
       {
         title: 'Обід',
@@ -24,7 +24,7 @@ export class SingleMenuBlockComponent {
         description: 'з переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.',
         price: 99,
         currency: '₴',
-        image: 'assets/images/2.svg'
+        image: 'assets/images/2.jpeg'
       },
       {
         title: 'Вечеря',
