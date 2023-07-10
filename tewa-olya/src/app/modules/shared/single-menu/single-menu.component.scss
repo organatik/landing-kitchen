@@ -10,7 +10,7 @@
 
   .sub-box{
     margin-left:100px;
-    padding-top: 100px;
+    padding-top: 50px;
     @media (max-width: 1500px){
       margin-left: 0;
       @media (max-width: 1024px){
@@ -61,7 +61,10 @@
     display: flex;
     justify-content: center;
     img{
-     max-width: 100%;
+      max-width: 100%;
+      border-radius: 20px;
+      width: 460px;
+      height: 350px;
       @media (max-width: 600px){
         width: 80%;
       }
