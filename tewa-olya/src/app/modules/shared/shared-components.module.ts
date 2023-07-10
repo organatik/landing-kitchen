@@ -10,6 +10,10 @@ import {MatButtonModule} from '@angular/material/button';
 import { CarouselComponent } from './carousel/carousel.component';
 
 
+import { SwiperCarouselComponent } from './swiper-carousel/swiper-carousel.component';
+import { SwiperModule } from 'swiper/angular';
+
+
 
 
 @NgModule({
@@ -20,7 +24,8 @@ import { CarouselComponent } from './carousel/carousel.component';
         CommentsComponent,
         SingleMenuComponent,
         MainButtonComponent,
-        CarouselComponent
+        CarouselComponent,
+        SwiperCarouselComponent
     ],
   exports: [
     HeaderComponent,
@@ -29,10 +34,12 @@ import { CarouselComponent } from './carousel/carousel.component';
     CommentsComponent,
     SingleMenuComponent,
     MainButtonComponent,
+    SwiperCarouselComponent,
   ],
   imports: [
     CommonModule,
     MatButtonModule,
+    SwiperModule
   ]
 })
 export class SharedComponentsModule { }

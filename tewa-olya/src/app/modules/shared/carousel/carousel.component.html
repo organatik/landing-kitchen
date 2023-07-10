@@ -1,6 +1,29 @@
 <div class="carousel-box" *ngIf="images && images.length > 0">
-  <img *ngFor="let image of images; let i = index"
-    [src]="image.imageSrc" alt=""
-    [ngClass] ="{'image-active' : selectedIndex === i}"
-  >
+  <ng-container *ngFor="let image of images; let index = index">
+    <img [src]="image.imageSrc" alt=""
+         [ngClass]="{
+        'image-active' : selectedIndex === index,
+      }"
+         class="fade"
+    >
+  </ng-container>
+
+  <div *ngIf="idnicators" class="box-dots">
+    <span class="dots"
+          *ngFor="let dot of images; let index = index"
+          [ngClass]="{'active': selectedIndex === index}"
+          (click)="selectImage(index)"
+    ></span>
+  </div>
+
+  <div *ngIf="controls" class="box-arrows">
+    <span class="material-symbols-outlined right"
+          (click)="onPrevClick()"
+          [ngClass]="{'arrow-active' : selectedIndex !== 0}"
+    >trending_flat</span>
+    <span class="material-symbols-outlined left"
+          (click)="onNextClick()"
+          [ngClass]="{'arrow-active' : selectedIndex !== images.length - 1}"
+    >trending_flat</span>
+  </div>
 </div>

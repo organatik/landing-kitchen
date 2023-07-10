@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {SingleMenuInterface} from "../card-food/interfaces/single-menu-interface";
 
 
@@ -12,11 +12,6 @@ export class SingleMenuComponent {
   @Input() singleMenu: SingleMenuInterface | undefined;
   @Input() isRevers: boolean = false;
 
-  images = [
-    {imageSrc:'assets/images/1.jpeg'},
-    {imageSrc:'assets/images/2.jpeg'},
-    {imageSrc:'assets/images/3.jpeg'},
-  ]
 
 
 }
