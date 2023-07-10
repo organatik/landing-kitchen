@@ -12,5 +12,11 @@ export class SingleMenuComponent {
   @Input() singleMenu: SingleMenuInterface | undefined;
   @Input() isRevers: boolean = false;
 
+  images = [
+    {imageSrc:'assets/images/1.jpeg'},
+    {imageSrc:'assets/images/2.jpeg'},
+    {imageSrc:'assets/images/3.jpeg'},
+  ]
+
 
 }

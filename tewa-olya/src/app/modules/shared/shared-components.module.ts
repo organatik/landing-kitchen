@@ -7,8 +7,7 @@ import { CommentsComponent } from './comments/comments.component';
 import { SingleMenuComponent } from './single-menu/single-menu.component';
 import { MainButtonComponent } from './main-button/main-button.component';
 import {MatButtonModule} from '@angular/material/button';
-import { ImgSliderComponent } from './img-slider/img-slider.component';
-import {CdkStepperModule} from "@angular/cdk/stepper";
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
@@ -21,7 +20,7 @@ import {CdkStepperModule} from "@angular/cdk/stepper";
         CommentsComponent,
         SingleMenuComponent,
         MainButtonComponent,
-        ImgSliderComponent
+        CarouselComponent
     ],
   exports: [
     HeaderComponent,
@@ -30,12 +29,10 @@ import {CdkStepperModule} from "@angular/cdk/stepper";
     CommentsComponent,
     SingleMenuComponent,
     MainButtonComponent,
-    ImgSliderComponent
   ],
   imports: [
     CommonModule,
     MatButtonModule,
-    CdkStepperModule,
   ]
 })
 export class SharedComponentsModule { }

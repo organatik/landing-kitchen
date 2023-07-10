@@ -1,0 +1,19 @@
+.carousel-box{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 550px;
+  border-radius: 20px;
+
+}
+
+.carousel-box img{
+  display: none;
+  border-radius: 20px;
+}
+
+.carousel-box img.image-active{
+  display: block;
+  width: 100%;
+  height: 450px;
+}
