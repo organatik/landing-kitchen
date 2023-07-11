@@ -6,6 +6,7 @@
           [autoplay]="true"
           [pagination]="{ clickable: true }"
           effect="flip"
+          (slideChange)="onSwiperSlideChange()"
           > <ng-template swiperSlide *ngFor="let image of singleMenu?.images; let i = index">
                 <div class="img">
                     <img [src]="image" alt="Slide">
@@ -14,11 +15,12 @@
   </swiper>
 
 
-
   <div class="box-arrows">
-    <span class="material-symbols-outlined right" (click)="onPrevClick()">trending_flat</span>
-    <span class="material-symbols-outlined left" (click)="onNextClick()">trending_flat</span>
+  <span class="material-symbols-outlined right" (click)="onPrevClick()"
+        [ngClass]="countSlider > 0 ? 'arrow-active' : ''"
+  >trending_flat</span>
+    <span class="material-symbols-outlined left" (click)="onNextClick()"
+          [ngClass]="countSlider < arrLength - 1 ? 'arrow-active' : ''"
+    >trending_flat</span>
   </div>
-</div>
-
 

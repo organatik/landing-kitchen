@@ -2,6 +2,7 @@ import {Component, Input, OnInit, ViewChild, ViewEncapsulation} from '@angular/c
 import SwiperCore, { Navigation, Pagination, Autoplay ,EffectFlip,} from 'swiper';
 import {SwiperComponent} from "swiper/angular";
 import {SingleMenuInterface} from "../card-food/interfaces/single-menu-interface";
+import {check} from "yargs";
 
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectFlip]);
 @Component({
@@ -13,15 +14,24 @@ SwiperCore.use([Navigation, Pagination, Autoplay, EffectFlip]);
 
 
 export class SwiperCarouselComponent implements OnInit{
+  countSlider = 0;
+  arrLength : any
+
   @Input() singleMenu: SingleMenuInterface | undefined;
+
+
   @ViewChild('swiper1') swiper1!:SwiperComponent;
   ngOnInit(): void {
+    this.arrLength = this.singleMenu?.images.length ?? 0;
   }
-
   ngAfterContentChecked(): void {
     if (this.swiper1) {
       this.swiper1.swiperRef.autoplay?.start();
+
     }
+  }
+  onSwiperSlideChange(): void {
+    this.countSlider = this.swiper1.swiperRef.realIndex;
   }
 
   onPrevClick(): void {
