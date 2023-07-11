@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { SwiperCarouselComponent } from './swiper-carousel/swiper-carousel.component';
 import { SwiperModule } from 'swiper/angular';
+import { CommentsSliderComponent } from './comments-slider/comments-slider.component';
 
 
 
@@ -23,7 +24,8 @@ import { SwiperModule } from 'swiper/angular';
         CommentsComponent,
         SingleMenuComponent,
         MainButtonComponent,
-        SwiperCarouselComponent
+        SwiperCarouselComponent,
+        CommentsSliderComponent
     ],
   exports: [
     HeaderComponent,
