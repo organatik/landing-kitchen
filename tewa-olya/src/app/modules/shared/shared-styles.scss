@@ -214,7 +214,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
   .material-symbols-outlined{
     font-size: 55px;
     color: $btnBg;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease;
     opacity: .5;
     @media (max-width: 767px){
       font-size: 35px;
@@ -224,7 +224,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
     transform: rotate(180deg);
   }
   .arrow-active{
-    transition: opacity .5s ease;
+    transition: opacity .2s ease;
     opacity: 1;
   }
 

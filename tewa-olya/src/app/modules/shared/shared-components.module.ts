@@ -7,7 +7,6 @@ import { CommentsComponent } from './comments/comments.component';
 import { SingleMenuComponent } from './single-menu/single-menu.component';
 import { MainButtonComponent } from './main-button/main-button.component';
 import {MatButtonModule} from '@angular/material/button';
-import { CarouselComponent } from './carousel/carousel.component';
 
 
 import { SwiperCarouselComponent } from './swiper-carousel/swiper-carousel.component';
@@ -24,7 +23,6 @@ import { SwiperModule } from 'swiper/angular';
         CommentsComponent,
         SingleMenuComponent,
         MainButtonComponent,
-        CarouselComponent,
         SwiperCarouselComponent
     ],
   exports: [
