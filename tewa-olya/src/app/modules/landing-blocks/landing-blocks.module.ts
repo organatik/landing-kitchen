@@ -11,7 +11,6 @@ import { CommentBlockComponent } from './comment-block/comment-block.component';
 import {MatButtonModule} from "@angular/material/button";
 
 
-
 @NgModule({
     declarations: [
         MainTopBlockComponent,
@@ -32,10 +31,10 @@ import {MatButtonModule} from "@angular/material/button";
     SingleMenuBlockComponent,
     CommentBlockComponent
   ],
-  imports: [
-    CommonModule,
-    SharedComponentsModule,
-    MatButtonModule
-  ]
+    imports: [
+        CommonModule,
+        SharedComponentsModule,
+        MatButtonModule,
+    ]
 })
 export class LandingBlocksModule { }

@@ -1,0 +1,32 @@
+@import "../shared-styles.scss";
+@import "../colors.scss";
+
+h1{
+  font-family: $font-large;
+  text-align: center;
+  color: $btnColor !important;
+}
+.icon-color{
+  color: $btnBg;
+  font-size: 35px;
+  height: 35px;
+  width: 35px;
+  padding-top: 5px;
+}
+.mat-dialog-content{
+  padding: 0 20px;
+
+}
+.mat-dialog-actions{
+  padding: 0 10px 20px;
+  text-align: center;
+}
+p{
+  color: $btnColor !important;
+  font-family: $font-small;
+  font-weight: 200 !important;
+}
+span{
+  color: $btnBg;
+  font-weight: 600 !important;
+}

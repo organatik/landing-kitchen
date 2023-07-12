@@ -2,15 +2,9 @@
   <div class="nj-container">
     <h2 class="title nj-h2 pd-titleSmall nj-textCenter">Відгуки клієнтів</h2>
     <div class="box">
-
-      <div class="item" *ngFor="let item of content">
-        <app-comments [commentData] = "item"></app-comments>
-      </div>
-
-    </div>
-    <div class="box-arrows">
-      <span class="material-symbols-outlined right">trending_flat</span>
-      <span class="material-symbols-outlined left">trending_flat</span>
+      <app-comments-slider [content]="content"></app-comments-slider>
     </div>
   </div>
 </section>
+
+
