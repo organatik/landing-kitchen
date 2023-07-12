@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {SingleMenuInterface} from "../../shared/card-food/interfaces/single-menu-interface";
+
 
 @Component({
   selector: 'app-single-menu-block',
   templateUrl: './single-menu-block.component.html',
-  styleUrls: ['./single-menu-block.component.scss']
+  styleUrls: ['./single-menu-block.component.scss'],
+
 })
-export class SingleMenuBlockComponent {
+
+
+export class SingleMenuBlockComponent{
+
     public singleMenu: SingleMenuInterface [] = [
+
       {
         title: 'Cніданок',
         firstText: ' Ви отримаєте інструкцію',
@@ -15,7 +21,7 @@ export class SingleMenuBlockComponent {
         description: 'з переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного сніданку.',
         price: 99,
         currency: '₴',
-        image: 'assets/images/1.jpeg'
+        images: ['assets/images/1.jpeg','assets/images/2.jpeg','assets/images/3.jpeg']
       },
       {
         title: 'Обід',
@@ -24,7 +30,7 @@ export class SingleMenuBlockComponent {
         description: 'з переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.',
         price: 99,
         currency: '₴',
-        image: 'assets/images/2.jpeg'
+        images: ['assets/images/3.jpeg','assets/images/2.jpeg','assets/images/1.jpeg']
       },
       {
         title: 'Вечеря',
@@ -33,7 +39,7 @@ export class SingleMenuBlockComponent {
         description: 'з переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного вечері.',
         price: 99,
         currency: '₴',
-        image: 'assets/images/3.svg'
-      },
+        images: ['assets/images/2.jpeg','assets/images/1.jpeg','assets/images/3.jpeg']
+      }
     ]
 }

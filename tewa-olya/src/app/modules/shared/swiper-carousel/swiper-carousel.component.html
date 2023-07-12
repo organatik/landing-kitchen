@@ -16,10 +16,12 @@
 
 
   <div class="box-arrows">
-  <span class="material-symbols-outlined right" (click)="onPrevClick()"
+  <span class="material-symbols-outlined right"
+        (click)="onPrevClick()"
         [ngClass]="countSlider > 0 ? 'arrow-active' : ''"
   >trending_flat</span>
-    <span class="material-symbols-outlined left" (click)="onNextClick()"
+    <span class="material-symbols-outlined left"
+          (click)="onNextClick()"
           [ngClass]="countSlider < arrLength - 1 ? 'arrow-active' : ''"
     >trending_flat</span>
   </div>

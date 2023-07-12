@@ -17,7 +17,6 @@ import {LandingBlocksModule} from "./modules/landing-blocks/landing-blocks.modul
     BrowserAnimationsModule,
     SharedComponentsModule,
     LandingBlocksModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
