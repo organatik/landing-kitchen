@@ -20,8 +20,8 @@ export class PopupMainBlockComponent {
       enterAnimationDuration: '1000ms'
     })
   }
-  closeDialog(){
-    this.dialogRef.close();
+  closeDialog(closedStatus: boolean){
+    this.dialogRef.close(closedStatus);
   }
 
 }

@@ -27,6 +27,7 @@ import { AfterPopupWindowComponent } from './after-popup-window/after-popup-wind
 import {MatInputModule} from "@angular/material/input";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.component';
+import { WhyWeCardComponent } from './why-we-card/why-we-card.component';
 
 
 
@@ -44,7 +45,8 @@ import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.com
         FormComponent,
         PopupComponent,
         AfterPopupWindowComponent,
-        PopupMainBlockComponent
+        PopupMainBlockComponent,
+        WhyWeCardComponent
     ],
   exports: [
     HeaderComponent,
@@ -55,6 +57,7 @@ import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.com
     MainButtonComponent,
     SwiperCarouselComponent,
     CommentsSliderComponent,
+    WhyWeCardComponent,
   ],
   imports: [
     CommonModule,

@@ -2,7 +2,7 @@
   <div class="btn-box">
     <h1  mat-dialog-title class="nj-h4">Напишіть Ваше <span class="nj-greenText">питання</span></h1>
     <button mat-icon-button matTooltip="Warn" color="warn" aria-label="Example icon-button with a heart icon"
-            class="btn-cancel" (click)="closeDialog()">
+            class="btn-cancel" (click)="closeDialog(false)">
       <mat-icon>cancel</mat-icon>
     </button>
   </div>
@@ -39,7 +39,7 @@
     </mat-form-field>
 
     <div class="mat-dialog-actions">
-      <app-main-button  mat-dialog-close [text]="'Надіслати'" (click)="afterSubmitPopup()"></app-main-button>
+      <app-main-button  mat-dialog-close [text]="'Надіслати'" (click)="closeDialog(true)"></app-main-button>
     </div>
 
   </div>

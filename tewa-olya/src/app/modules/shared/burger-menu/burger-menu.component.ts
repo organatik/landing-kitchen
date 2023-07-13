@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-burger-menu',
@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./burger-menu.component.scss']
 })
 export class BurgerMenuComponent implements OnInit {
-  // active : boolean = false
+
 
   @Input() init: boolean = false;
   @Output() opened = new EventEmitter<any>();
@@ -21,4 +21,6 @@ export class BurgerMenuComponent implements OnInit {
     this.active = !this.active;
     this.opened.emit();
   }
+
+
 }
