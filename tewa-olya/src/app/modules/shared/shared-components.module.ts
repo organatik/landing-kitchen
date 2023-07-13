@@ -24,9 +24,12 @@ import { AfterPopupWindowComponent } from './after-popup-window/after-popup-wind
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.component';
+import { WhyWeCardComponent } from './why-we-card/why-we-card.component';
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { TelegramFormBotService } from './services/telegram-form-bot';
 import { HttpClientModule } from '@angular/common/http';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     PopupComponent,
     AfterPopupWindowComponent,
     PopupMainBlockComponent,
+    BurgerMenuComponent,
+    WhyWeCardComponent,
   ],
   exports: [
     HeaderComponent,
@@ -52,6 +57,7 @@ import { HttpClientModule } from '@angular/common/http';
     MainButtonComponent,
     SwiperCarouselComponent,
     CommentsSliderComponent,
+    WhyWeCardComponent,
   ],
   imports: [
     CommonModule,
