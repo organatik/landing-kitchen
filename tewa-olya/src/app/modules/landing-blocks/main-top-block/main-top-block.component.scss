@@ -1,12 +1,12 @@
 .main {
   height: 90vh;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   z-index: 98;
   @media (max-width: 1024px) {
     align-items: center;
     @media (max-width: 600px) {
-      justify-content: start;
+      justify-content: flex-start;
       @media (max-height: 786px) {
         height: 100%;
       }
@@ -80,7 +80,7 @@
       flex: 1 1 auto;
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: flex-start;
 
       @media (max-width: 1024px) {
         flex: 0 1 60%;
