@@ -26,6 +26,7 @@ import { PopupComponent } from './popup/popup.component';
 import { AfterPopupWindowComponent } from './after-popup-window/after-popup-window.component';
 import {MatInputModule} from "@angular/material/input";
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.component';
 
 
 
@@ -42,7 +43,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
         CommentsSliderComponent,
         FormComponent,
         PopupComponent,
-        AfterPopupWindowComponent
+        AfterPopupWindowComponent,
+        PopupMainBlockComponent
     ],
   exports: [
     HeaderComponent,
