@@ -2,18 +2,19 @@
   <div class="nj-container">
     <h2 class="title nj-h2 nj-textCenter pd-pb50">Діє спеціальна пропозиція</h2>
     <div class="box">
-
-       <div class="item" *ngFor="let item of menu">
+      <div class="item" *ngFor="let item of menu">
         <app-card-food [cardData]="item"></app-card-food>
       </div>
-
     </div>
 
     <div class="btn-box pd-pb50">
-    <h5 class="nj-h2 pd-pb30">Купуй все разом дешевше<span class="nj-greenText">250₴</span></h5>
-      <app-main-button [text]="'замовити все'" (click)="openPopup()"></app-main-button>
+      <h5 class="nj-h2 pd-pb30">
+        Купуй все разом дешевше<span class="nj-greenText">250₴</span>
+      </h5>
+      <app-main-button
+        [text]="'замовити все'"
+        (click)="openPopup()"
+      ></app-main-button>
     </div>
-
   </div>
 </section>
-

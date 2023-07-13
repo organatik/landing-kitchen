@@ -1,67 +1,66 @@
 @import "../shared-styles.scss";
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 70px;
   z-index: 99;
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     padding: 10px;
   }
-  img{
+  img {
     width: 80px;
     height: 80px;
     min-height: 100%;
     max-width: 100%;
 
-
-    @media (max-width: 320px){
+    @media (max-width: 320px) {
       width: 50px;
       height: 50px;
     }
   }
-  .menu-btn{
+  .menu-btn {
     display: none;
 
-    @media(max-width: 1024px){
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-       span{
+    @media (max-width: 1024px) {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      z-index: 99;
+      span {
         width: 33px;
         height: 3px;
         background: $mainColor;
         display: block;
         border-radius: 6px;
-        transition: .4s ease-in-out;
-         @media (max-width: 320px){
-           width: 30px;
-         }
-       }
+        transition: 0.4s ease-in-out;
+        @media (max-width: 320px) {
+          width: 30px;
+        }
+      }
     }
   }
-  .menu-btn span:nth-child(2){
+  .menu-btn span:nth-child(2) {
     margin: 4px 0;
   }
-  .menu-btn-Class span:nth-child(2){
-  display: none;
+  .menu-btn-Class span:nth-child(2) {
+    display: none;
   }
-  .menu-btn-Class span:nth-child(1){
+  .menu-btn-Class span:nth-child(1) {
     transform: rotate(225deg);
     background: $btnBg;
   }
-  .menu-btn-Class span:nth-child(3){
+  .menu-btn-Class span:nth-child(3) {
     transform: rotate(-225deg);
     margin-top: -3px;
     background: $btnBg;
   }
 
-  .header-nav{
+  .header-nav {
     display: flex;
     text-align: end;
     flex: 0 1 550px;
@@ -74,21 +73,21 @@ header{
       background: $greenText;
       flex-direction: column;
       align-items: start;
-      transition: .4s ease-in-out;
+      transition: 0.4s ease-in-out;
       transform: translateY(-1000%);
       z-index: 98;
-      a{
+      a {
         padding: 10px 0;
         border-bottom: 1px solid $cartBorder;
       }
-      .btn-box{
+      .btn-box {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
       }
     }
-    .link{
+    .link {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -96,13 +95,12 @@ header{
       margin: 0 auto;
     }
   }
-  .menuClass{
+  .menuClass {
     transform: translateX(0);
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
-
 }
-.headerGreen{
+.headerGreen {
   background: $greenText;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }

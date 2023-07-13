@@ -1,28 +1,36 @@
-import {Component, Input, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
-import SwiperCore, {Navigation, Pagination, Autoplay, EffectCube,} from 'swiper';
-import {CommentInterface} from "../card-food/interfaces/comment-interface";
-import {SwiperComponent} from "swiper/angular";
-import {number} from "yargs";
+import {
+  Component,
+  Input,
+  OnInit,
+  ViewChild,
+  ViewEncapsulation,
+} from '@angular/core';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCube,
+} from 'swiper';
+import { CommentInterface } from '../card-food/interfaces/comment-interface';
+import { SwiperComponent } from 'swiper/angular';
+import { number } from 'yargs';
 
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectCube]);
 @Component({
   selector: 'app-comments-slider',
   templateUrl: './comments-slider.component.html',
   styleUrls: ['./comments-slider.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
-
-
-export class CommentsSliderComponent implements OnInit{
+export class CommentsSliderComponent implements OnInit {
   countSlider = 0;
-  lengthArray : number = 0;
-  @Input() content: CommentInterface [] | undefined;
+  lengthArray: number = 0;
+  @Input() content: CommentInterface[] | undefined;
 
-  @ViewChild('swiperComment') swiperComment!:SwiperComponent;
+  @ViewChild('swiperComment') swiperComment!: SwiperComponent;
   ngOnInit(): void {
-    this.lengthArray = this.content?.length?? 0
-    this.lengthArray /= 2
-
+    this.lengthArray = this.content?.length ?? 0;
+    this.lengthArray /= 2;
   }
 
   ngAfterContentChecked(): void {
@@ -33,7 +41,6 @@ export class CommentsSliderComponent implements OnInit{
   onSwiperSlideChange(): void {
     this.countSlider = this.swiperComment.swiperRef.realIndex;
   }
-
 
   onPrevClick(): void {
     this.swiperComment.swiperRef.slidePrev();

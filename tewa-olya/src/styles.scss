@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "app/modules/shared/shared-styles.scss";
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: $font-small, sans-serif; color: $pColor;}
-a{text-decoration: none; color: inherit;}
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: $font-small, sans-serif;
+  color: $pColor;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Указываем box sizing */
 *,
@@ -85,5 +93,3 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-

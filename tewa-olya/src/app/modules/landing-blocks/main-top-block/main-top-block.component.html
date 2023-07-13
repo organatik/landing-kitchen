@@ -1,16 +1,29 @@
 <section class="main">
-    <div class="box">
-      <div class="sub-box">
-        <h1 class="title nj-h1 animate__animated animate__fadeInDown animate__delay-1s">Смакуй кожного дня <br> по рецептам
-          <br> від <span class="nj-greenText nj name">тещі Олі</span>
-        </h1>
-        <p class="text nj-p animate__animated animate__fadeInLeftBig animate__delay-2s">
-          Добрий день! У наш час все більше людей цікавляться кулінарією, адже вона вже давним-давно зробила крок за межі фантазії. І якщо раніше ми не приділяли достатньо уваги різноманіттю наших страв, то тепер намагаємось навіть у денний раціон додати щось особливе.
-        </p>
-        <app-main-button class="animate__animated animate__fadeIn animate__delay-3s" [text]="'Запитати'" (click)="openMainPopup()"></app-main-button>
-      </div>
-      <div class="img animate__animated animate__fadeIn animate__delay-3s">
-        <img src="assets/images/food.png" alt="">
-      </div>
+  <div class="box">
+    <div class="sub-box">
+      <h1
+        class="title nj-h1 animate__animated animate__fadeInDown animate__delay-1s"
+      >
+        Смакуй кожного дня <br />
+        по рецептам <br />
+        від <span class="nj-greenText nj name">тещі Олі</span>
+      </h1>
+      <p
+        class="text nj-p animate__animated animate__fadeInLeftBig animate__delay-2s"
+      >
+        Добрий день! У наш час все більше людей цікавляться кулінарією, адже
+        вона вже давним-давно зробила крок за межі фантазії. І якщо раніше ми не
+        приділяли достатньо уваги різноманіттю наших страв, то тепер намагаємось
+        навіть у денний раціон додати щось особливе.
+      </p>
+      <app-main-button
+        class="animate__animated animate__fadeIn animate__delay-3s"
+        [text]="'Запитати'"
+        (click)="openMainPopup()"
+      ></app-main-button>
     </div>
+    <div class="img animate__animated animate__fadeIn animate__delay-3s">
+      <img src="assets/images/food.png" alt="" />
+    </div>
+  </div>
 </section>

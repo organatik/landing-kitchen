@@ -8,7 +8,7 @@ describe('WhyWeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [WhyWeComponent]
+      declarations: [WhyWeComponent],
     });
     fixture = TestBed.createComponent(WhyWeComponent);
     component = fixture.componentInstance;

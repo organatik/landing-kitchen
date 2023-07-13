@@ -1,100 +1,99 @@
 @import "../../shared/colors.scss";
 
-.footer{
+.footer {
   background: $background;
   padding: 100px 70px;
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     padding: 60px 20px;
   }
-  .footer-box{
+  .footer-box {
     display: flex;
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       gap: 30px;
-      @media (max-width: 500px){
+      @media (max-width: 500px) {
         gap: 0;
       }
     }
-    .logo-column{
+    .logo-column {
       flex: 0 1 30%;
       padding-left: 10%;
-      @media (max-width: 1200px){
+      @media (max-width: 1200px) {
         padding-left: 0;
-        @media (max-width: 1024px){
+        @media (max-width: 1024px) {
           flex: 0 1 20%;
-          @media (max-width: 500px){
+          @media (max-width: 500px) {
             display: flex;
             align-items: center;
           }
         }
       }
-      .box-logo{
-        .logo{
+      .box-logo {
+        .logo {
           width: 92px;
           display: block;
-          @media (max-width: 500px){
+          @media (max-width: 500px) {
             width: 40px;
           }
         }
       }
     }
-    .box-information{
+    .box-information {
       flex: 1 1 auto;
       display: flex;
       justify-content: space-evenly;
-      @media (max-width: 1024px){
+      @media (max-width: 1024px) {
         justify-content: space-between;
-        a{
+        a {
           font-size: 15px;
         }
       }
     }
   }
 }
-.title{
+.title {
   padding-bottom: 20px;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     font-size: 17px;
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       font-size: 15px;
     }
   }
 }
 
-.links{
+.links {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: $textTransparent;
-  a{
+  a {
     color: $textTransparent;
   }
 
-  .row-contact{
+  .row-contact {
     display: flex;
     align-items: center;
     gap: 15px;
-    a{
+    a {
       @media (max-width: 767px) {
         display: none;
       }
     }
   }
-  .row-contact:hover a{
-
-    @media (max-width: 767px){
+  .row-contact:hover a {
+    @media (max-width: 767px) {
       display: block;
     }
   }
 }
 
-.bottom{
+.bottom {
   background-image: url("/assets/images/footer-bg.svg");
   height: 60px;
   min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  p{
+  p {
     color: $btnColor;
   }
 }

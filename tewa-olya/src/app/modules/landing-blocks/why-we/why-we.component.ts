@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-why-we',
   templateUrl: './why-we.component.html',
-  styleUrls: ['./why-we.component.scss']
+  styleUrls: ['./why-we.component.scss'],
 })
-export class WhyWeComponent {
-
-}
+export class WhyWeComponent {}

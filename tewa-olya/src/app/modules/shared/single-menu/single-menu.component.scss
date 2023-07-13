@@ -1,81 +1,79 @@
-.box{
+.box {
   display: flex;
   flex-direction: row-reverse;
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     padding-bottom: 35px;
-    @media (max-width: 700px){
-    flex-direction: column-reverse !important;
+    @media (max-width: 700px) {
+      flex-direction: column-reverse !important;
     }
   }
 
-  .sub-box{
-    margin-left:100px;
+  .sub-box {
+    margin-left: 100px;
     padding-top: 50px;
-    @media (max-width: 1500px){
+    @media (max-width: 1500px) {
       margin-left: 0;
-      @media (max-width: 1024px){
+      @media (max-width: 1024px) {
         padding-top: 40px;
-        @media (max-width: 700px){
+        @media (max-width: 700px) {
           padding-top: 10px;
         }
       }
     }
     flex: 0 0 50%;
-    .sub-title{
+    .sub-title {
       padding: 0 10px 30px 0;
-      @media (max-width: 1024px){
+      @media (max-width: 1024px) {
         padding: 0 10px 20px 0;
-        @media (max-width: 700px){
+        @media (max-width: 700px) {
           text-align: center;
         }
       }
     }
-    .price-box{
+    .price-box {
       display: flex;
       justify-content: space-between;
       align-items: center;
       max-width: 400px;
-      @media (max-width: 600px){
+      @media (max-width: 600px) {
         justify-content: space-around;
       }
-      .number{
-        @media (max-width: 600px){
+      .number {
+        @media (max-width: 600px) {
           font-size: 24px;
         }
       }
     }
-    .text{
+    .text {
       max-width: 425px;
       padding-bottom: 50px;
-      @media (max-width: 1024px){
+      @media (max-width: 1024px) {
         max-width: 100%;
         padding-bottom: 30px;
-        @media (max-width: 600px){
+        @media (max-width: 600px) {
           padding-bottom: 25px;
         }
       }
     }
   }
-  .img{
+  .img {
     flex: 0 0 50%;
     display: flex;
     justify-content: center;
-    img{
+    img {
       max-width: 100%;
       border-radius: 20px;
       width: 460px;
       height: 350px;
-      @media (max-width: 600px){
+      @media (max-width: 600px) {
         width: 80%;
       }
     }
   }
-
 }
-.flex-reverse{
+.flex-reverse {
   flex-direction: row;
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     flex-direction: column;
   }
 }
-

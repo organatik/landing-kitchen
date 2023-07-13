@@ -8,7 +8,7 @@ describe('MainTopBlockComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MainTopBlockComponent]
+      declarations: [MainTopBlockComponent],
     });
     fixture = TestBed.createComponent(MainTopBlockComponent);
     component = fixture.componentInstance;

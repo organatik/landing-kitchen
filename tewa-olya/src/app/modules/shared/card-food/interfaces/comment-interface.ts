@@ -1,7 +1,5 @@
-export interface CommentInterface{
+export interface CommentInterface {
   img: string;
   title: string;
   description: string;
-
-
 }

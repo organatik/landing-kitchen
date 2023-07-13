@@ -1,4 +1,4 @@
-export interface SingleMenuInterface{
+export interface SingleMenuInterface {
   title: string;
   firstText: string;
   greenText: string;
@@ -6,5 +6,4 @@ export interface SingleMenuInterface{
   price: number;
   currency: string;
   images: string[];
-
 }

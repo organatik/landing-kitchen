@@ -1,7 +1,7 @@
 <form class="example-form">
   <mat-form-field class="example-full-width">
     <mat-label>Name</mat-label>
-    <input [formControl]='nameControl' matInput >
+    <input [formControl]="nameControl" matInput />
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
@@ -10,4 +10,4 @@
   </mat-form-field>
 </form>
 
-<button (click)='sendForm()'>Send form</button>
+<button (click)="sendForm()">Send form</button>

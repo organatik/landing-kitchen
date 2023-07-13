@@ -8,7 +8,7 @@ describe('FormForTelegramComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FormForTelegramComponent]
+      declarations: [FormForTelegramComponent],
     });
     fixture = TestBed.createComponent(FormForTelegramComponent);
     component = fixture.componentInstance;

@@ -1,20 +1,28 @@
-<div class="box" [ngStyle]="{'flex-direction': isRevers ? 'row-reverse' : 'row'}">
+<div
+  class="box"
+  [ngStyle]="{ 'flex-direction': isRevers ? 'row-reverse' : 'row' }"
+>
   <div class="sub-box">
-    <h3 class="sub-title nj-h3">{{singleMenu?.title}}</h3>
-    <p class="text nj-p">{{singleMenu?.firstText}} <span class="nj-salatText">{{singleMenu?.greenText}}</span>
-      <br>
-      {{singleMenu?.description}}
+    <h3 class="sub-title nj-h3">{{ singleMenu?.title }}</h3>
+    <p class="text nj-p">
+      {{ singleMenu?.firstText }}
+      <span class="nj-salatText">{{ singleMenu?.greenText }}</span>
+      <br />
+      {{ singleMenu?.description }}
     </p>
     <div class="price-box">
-      <app-main-button [text]="'Купити'" (click)="openPopup()"></app-main-button>
-      <p class="number nj-h3 nj-textCenter">{{singleMenu?.price}}<span class="currency">{{singleMenu?.currency}}</span></p>
+      <app-main-button
+        [text]="'Купити'"
+        (click)="openPopup()"
+      ></app-main-button>
+      <p class="number nj-h3 nj-textCenter">
+        {{ singleMenu?.price
+        }}<span class="currency">{{ singleMenu?.currency }}</span>
+      </p>
     </div>
   </div>
 
   <div class="img">
     <app-swiper-carousel [singleMenu]="singleMenu"></app-swiper-carousel>
   </div>
-
 </div>
-
-

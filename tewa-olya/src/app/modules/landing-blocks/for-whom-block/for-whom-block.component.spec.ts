@@ -8,7 +8,7 @@ describe('ForWhomBlockComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ForWhomBlockComponent]
+      declarations: [ForWhomBlockComponent],
     });
     fixture = TestBed.createComponent(ForWhomBlockComponent);
     component = fixture.componentInstance;

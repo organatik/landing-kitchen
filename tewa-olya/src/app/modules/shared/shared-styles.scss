@@ -1,12 +1,12 @@
-@import '~normalize.css';
+@import "~normalize.css";
 @import "colors";
 @import "~swiper/swiper-bundle.css";
-@import '~animate.css/animate.css';
+@import "~animate.css/animate.css";
 
-$font-large:'Comfortaa', cursive;
-$font-small: 'Montserrat Alternates', sans-serif;
+$font-large: "Comfortaa", cursive;
+$font-small: "Montserrat Alternates", sans-serif;
 
-.nj-h1{
+.nj-h1 {
   font-family: $font-large;
   color: $mainColor;
   font-size: 59px;
@@ -17,13 +17,13 @@ $font-small: 'Montserrat Alternates', sans-serif;
   @media (max-width: 1200px) {
     font-size: 40px;
     line-height: 135%;
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
       font-size: 28px;
-      @media (max-width: 768px){
+      @media (max-width: 768px) {
         font-size: 24px;
-        @media (max-width: 500px){
+        @media (max-width: 500px) {
           font-size: 20px;
-          @media (max-width: 370px){
+          @media (max-width: 370px) {
             font-size: 18px;
           }
         }
@@ -32,7 +32,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
   }
 }
 
-.nj-h2{
+.nj-h2 {
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
@@ -41,13 +41,13 @@ $font-small: 'Montserrat Alternates', sans-serif;
   @media (max-width: 1200px) {
     font-size: 40px;
     line-height: 150%;
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
       font-size: 32px;
-      @media (max-width: 768px){
+      @media (max-width: 768px) {
         font-size: 24px;
-        @media (max-width: 500px){
+        @media (max-width: 500px) {
           font-size: 20px;
-          @media (max-width: 370px){
+          @media (max-width: 370px) {
             font-size: 15px;
           }
         }
@@ -56,7 +56,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
   }
 }
 
-.nj-h3{
+.nj-h3 {
   font-family: $font-large;
   color: $mainColor;
   font-size: 36px;
@@ -66,13 +66,13 @@ $font-small: 'Montserrat Alternates', sans-serif;
   @media (max-width: 1200px) {
     font-size: 30px;
     line-height: 135%;
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
       font-size: 28px;
-      @media (max-width: 768px){
+      @media (max-width: 768px) {
         font-size: 20px;
-        @media (max-width: 500px){
+        @media (max-width: 500px) {
           font-size: 18px;
-          @media (max-width: 370px){
+          @media (max-width: 370px) {
             font-size: 15px;
           }
         }
@@ -81,24 +81,24 @@ $font-small: 'Montserrat Alternates', sans-serif;
   }
 }
 
-.nj-h4{
+.nj-h4 {
   font-family: $font-large;
   color: $mainColor;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
-    @media (max-width: 1024px){
-      font-size: 18px;
-      @media (max-width: 500px){
-        font-size: 15px;
-        @media (max-width: 370px){
-          font-size: 12px;
-        }
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    @media (max-width: 500px) {
+      font-size: 15px;
+      @media (max-width: 370px) {
+        font-size: 12px;
+      }
     }
   }
 }
-.nj-h5{
+.nj-h5 {
   font-family: $font-large;
   color: $mainColor;
   font-size: 18px;
@@ -108,7 +108,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
   margin: 0;
 }
 
-.nj-greenText{
+.nj-greenText {
   width: fit-content;
   height: 120%;
   border-radius: 12px;
@@ -117,7 +117,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
   color: $btnColor;
 }
 
-.nj-salatText{
+.nj-salatText {
   width: fit-content;
   padding: 4px;
   background: $greenText;
@@ -126,111 +126,111 @@ $font-small: 'Montserrat Alternates', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 18px;
-    @media (max-width: 370px){
+    @media (max-width: 370px) {
       font-size: 18px;
-      @media (max-width: 370px){
+      @media (max-width: 370px) {
         font-size: 15px;
       }
     }
   }
 }
 
-.nj-p{
+.nj-p {
   font-size: 18px;
   font-family: $font-small;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   color: $pColor;
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 15px;
-    @media (max-width: 370px){
+    @media (max-width: 370px) {
       font-size: 12px;
     }
   }
 }
 
-.nj-textTransparent{
+.nj-textTransparent {
   font-size: 18px;
   font-family: $font-small;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   color: $btnBg;
-  opacity: .6;
+  opacity: 0.6;
 }
-.nj-container{
+.nj-container {
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     padding: 0 10px;
   }
 }
 
-.pd-title{
-  padding:100px 0 50px;
-  @media (max-width: 768px){
+.pd-title {
+  padding: 100px 0 50px;
+  @media (max-width: 768px) {
     padding: 50px 0 30px;
   }
 }
-.pd-titleSmall{
-  padding:50px 0 30px;
+.pd-titleSmall {
+  padding: 50px 0 30px;
 }
-.pd-pb30{
+.pd-pb30 {
   padding-bottom: 30px;
 }
-.pd-pb50{
+.pd-pb50 {
   padding-bottom: 50px;
 }
-.pd-pb100{
+.pd-pb100 {
   padding-bottom: 100px;
 }
-.pd-pb150{
+.pd-pb150 {
   padding-bottom: 150px;
 }
-.subColor{
+.subColor {
   color: $subColor;
 }
-.nj-textCenter{
+.nj-textCenter {
   text-align: center;
 }
-.nj-border{
+.nj-border {
   border: 1px solid $cartBorder;
   border-radius: 20px;
 }
-.nj-description{
+.nj-description {
   color: $subColor;
 }
 
-.box-arrows{
+.box-arrows {
   display: flex;
   justify-content: center;
   padding-bottom: 70px;
   cursor: pointer;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     padding-bottom: 35px;
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
       padding-bottom: 25px;
     }
   }
 
-  .material-symbols-outlined{
+  .material-symbols-outlined {
     font-size: 55px;
     color: $btnBg;
-    transition: opacity .2s ease;
-    opacity: .5;
-    @media (max-width: 767px){
+    transition: opacity 0.2s ease;
+    opacity: 0.5;
+    @media (max-width: 767px) {
       font-size: 35px;
     }
   }
-  .right{
+  .right {
     transform: rotate(180deg);
   }
-  .arrow-active{
-    transition: opacity .2s ease;
+  .arrow-active {
+    transition: opacity 0.2s ease;
     opacity: 1;
   }
 }
@@ -240,96 +240,113 @@ $font-small: 'Montserrat Alternates', sans-serif;
   margin: 0 auto;
 }
 
-
 //form
 
 //mat-form
 //change mat-input color & bg & fsz on focus
 
-.mat-mdc-form-field{
+.mat-mdc-form-field {
   width: 100%;
   padding-bottom: 20px;
 }
 
-.cdk-global-overlay-wrapper{
-  @media (max-width: 320px){
+.cdk-global-overlay-wrapper {
+  @media (max-width: 320px) {
     overflow: scroll;
   }
 }
-.mat-mdc-form-field{
-  @media (max-width: 500px){
+.mat-mdc-form-field {
+  @media (max-width: 500px) {
     padding-bottom: 0;
   }
 }
 
-.mdc-text-field--focused:not(.mcd-text-field--disabled) .mdc-floating-label{
+.mdc-text-field--focused:not(.mcd-text-field--disabled) .mdc-floating-label {
   color: $btnColor !important;
   background: $btnBg !important;
   padding: 2.5px 10px;
 }
 
 //require *
-.mdc-text-field:not(.mdc-text-field-disabled) .mdc-floating-label{
+.mdc-text-field:not(.mdc-text-field-disabled) .mdc-floating-label {
   color: $greenOpacity;
   font-size: 18px !important;
   font-family: $font-large;
-  @media (max-width: 320px){
+  @media (max-width: 320px) {
     font-size: 15px !important;
     line-height: 20px;
   }
 }
 
 // value color
-.mdc-text-field:not(.mcd-text-field--disabled) .mdc-text-field__input{
+.mdc-text-field:not(.mcd-text-field--disabled) .mdc-text-field__input {
   color: $mainColor;
   font-size: 20px !important;
   font-family: $font-large;
   font-weight: bold;
-  @media (max-width: 320px){
+  @media (max-width: 320px) {
     font-size: 18px !important;
     line-height: 20px;
   }
 }
 
 // placeholder color
-.mdc-text-field:not(.mcd-text-field--disabled) .mdc-text-field__input::placeholder{
+.mdc-text-field:not(.mcd-text-field--disabled)
+  .mdc-text-field__input::placeholder {
   color: $btnBg;
-
 }
 
 // caret color
-.mdc-text-field .mdc-text-field__input{
+.mdc-text-field .mdc-text-field__input {
   caret-color: $mainColor;
 }
 
 // border color & width
-.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
-.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
-.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing{
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__trailing {
   border-color: $greenText;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 //hover border
-.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,
-.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,
-.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing{
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
+    .mdc-text-field--focused
+  ):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
+    .mdc-text-field--focused
+  ):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
+    .mdc-text-field--focused
+  ):hover
+  .mdc-notched-outline
+  .mdc-notched-outline__trailing {
   border-color: $btnBg;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 //focus border color
-.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
-.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
-.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing{
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-notched-outline__trailing {
   border-color: $btnBg;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 //multy form
 
 //select line
-.mdc-text-field--filled .mdc-line-ripple::after{
+.mdc-text-field--filled .mdc-line-ripple::after {
   border-bottom: $btnBg;
 }
 //select menu
@@ -339,11 +356,12 @@ $font-small: 'Montserrat Alternates', sans-serif;
 }
 
 //select text active
-.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled)
+  .mdc-list-item__primary-text {
   color: $btnColor !important;
 }
 //select text panel
-.mat-mdc-select-panel-above .mat-mdc-select-panel{
+.mat-mdc-select-panel-above .mat-mdc-select-panel {
   //background: $greenText;
 }
 
@@ -357,7 +375,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
 
 //text panel list active
 .mat-mdc-option:focus.mdc-list-item,
-.mat-mdc-option.mat-mdc-option-active.mdc-list-item:hover{
+.mat-mdc-option.mat-mdc-option-active.mdc-list-item:hover {
   background: $btnBg;
 }
 
@@ -370,10 +388,11 @@ $font-small: 'Montserrat Alternates', sans-serif;
 .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full,
 .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full {
   background: $btnBg;
-
 }
 //checkbox checked
-.mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after, .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
+.mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after,
+.mat-primary
+  .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
   color: $btnColor;
 }
 
@@ -388,6 +407,3 @@ $font-small: 'Montserrat Alternates', sans-serif;
 .mat-mdc-select-arrow svg {
   fill: $mainColor !important;
 }
-
-
-

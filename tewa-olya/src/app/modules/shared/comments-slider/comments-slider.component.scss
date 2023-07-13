@@ -1,20 +1,19 @@
 @import "../shared-styles.scss";
 @import "../colors.scss";
 
-.block-swiper{
-
+.block-swiper {
 }
 
-.swiper{
+.swiper {
   width: 100%;
   height: 100%;
 }
-.swiper-pagination{
+.swiper-pagination {
   display: none;
 }
-.box-arrows{
+.box-arrows {
   padding-top: 30px;
-  .left{
+  .left {
     margin-right: 12px;
   }
 }
