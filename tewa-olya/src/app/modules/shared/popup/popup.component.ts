@@ -35,7 +35,6 @@ export class PopupComponent {
 
   afterSubmitPopup() {
     this.submitted = true;
-    console.log(this.form);
     if (this.form.invalid) {
       return;
     }
@@ -50,7 +49,7 @@ export class PopupComponent {
       ORDER: ${formValue.order}%0A
     `;
 
-    // this.telegramFormBotService.sendForm(formattingText);
+    this.telegramFormBotService.sendForm(formattingText);
 
     this.afterPopupDialog.open(AfterPopupWindowComponent, {
       enterAnimationDuration: '1000ms',
