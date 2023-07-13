@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {PopupComponent} from "../popup/popup.component";
+import {PopupService} from "../../popup.service";
 
 @Component({
   selector: 'app-header',
@@ -12,14 +13,9 @@ export class HeaderComponent {
  public menuBtnVariable = false
   public menuHeaderVariable = false
 
-  constructor(
-   private dialog:MatDialog
-  ) {
-  }
+  constructor(private popupService: PopupService) {}
   openPopup(){
-   this.dialog.open(PopupComponent,{
-     enterAnimationDuration: '700ms'
-   })
+   this.popupService.openPopup()
   }
 
   openMenu = () => {

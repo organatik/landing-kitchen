@@ -150,6 +150,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
     }
   }
 }
+
 .nj-textTransparent{
   font-size: 18px;
   font-family: $font-small;
@@ -169,7 +170,7 @@ $font-small: 'Montserrat Alternates', sans-serif;
 }
 
 .pd-title{
-  padding:100px 0 30px;
+  padding:100px 0 50px;
   @media (max-width: 768px){
     padding: 50px 0 30px;
   }
@@ -177,8 +178,17 @@ $font-small: 'Montserrat Alternates', sans-serif;
 .pd-titleSmall{
   padding:50px 0 30px;
 }
-.pd-section{
+.pd-pb30{
+  padding-bottom: 30px;
+}
+.pd-pb50{
   padding-bottom: 50px;
+}
+.pd-pb100{
+  padding-bottom: 100px;
+}
+.pd-pb150{
+  padding-bottom: 150px;
 }
 .subColor{
   color: $subColor;
