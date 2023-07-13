@@ -8,6 +8,8 @@ header {
   position: fixed;
   width: 100%;
   background: $btnColor;
+  transition: .5s ease;
+  transform: translateX(0%);
   @media (max-width: 1024px) {
     padding: 10px;
   }
@@ -108,4 +110,8 @@ header {
 .headerGreen {
   background: $greenText;
   transition: all 0.5s ease-in;
+}
+.header-none{
+  transform: translateY(-100%);
+  transition: transform .5s ease;
 }
