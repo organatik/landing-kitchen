@@ -1,5 +1,5 @@
 .main{
-  height: 75vh;
+  height: 90vh;
   display: flex;
   justify-content: start;
   z-index: 98;
@@ -15,9 +15,9 @@
   .box{
      display: flex;
      align-items: center;
-     padding: 50px 20px 0 150px;
+     padding: 0 20px 0 150px;
      width: 100%;
-     height: fit-content;
+     height: 100%;
 
     @media (max-width: 1024px){
       gap: 2%;

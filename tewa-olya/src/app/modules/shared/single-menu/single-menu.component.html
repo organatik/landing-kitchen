@@ -6,7 +6,7 @@
       {{singleMenu?.description}}
     </p>
     <div class="price-box">
-      <app-main-button [text]="'Купити'"></app-main-button>
+      <app-main-button [text]="'Купити'" (click)="openPopup()"></app-main-button>
       <p class="number nj-h3 nj-textCenter">{{singleMenu?.price}}<span class="currency">{{singleMenu?.currency}}</span></p>
     </div>
   </div>

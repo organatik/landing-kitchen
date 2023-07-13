@@ -5,8 +5,88 @@
   width: 100%;
   padding-bottom: 20px;
 }
+.popup-wrapper{
+  background: $btnColor;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  @media (max-width: 500px){
+    padding: 10px 20px;
+    @media (max-width: 320px){
+      padding: 5px 10px;
+    }
+  }
+  .btn-box{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 30px;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      padding: 0 0 30px;
+      @media (max-width: 320px){
+        padding: 0 0 10px;
+      }
+    }
+    .btn-cancel{
+      margin-left: auto;
+    }
+    h1{
+      flex: 1 1 auto;
+      text-align: center;
+      color: $mainColor;
+      font-family: $font-large;
+      font-weight: bolder;
+      font-size: 22px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
+      @media (max-width: 500px) {
+        font-size: 20px;
+        flex-wrap: wrap;
+        @media (max-width: 400px){
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .mat-dialog-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .mat-dialog-actions{
+    text-align: center;
+    font-size: 20px !important;
+    font-family: $font-large;
+    font-weight: bold;
+    padding-bottom: 20px;
+    @media (max-width: 500px){
+      padding-bottom: 10px;
+    }
+  }
+  .mdc-list-item__primary-text {
+    color: $btnBg !important;
+    font-size: 20px !important;
+    font-family: $font-large !important;
+  }
+}
+
+
+//mat-form
 //change mat-input color & bg & fsz on focus
+.cdk-global-overlay-wrapper{
+  @media (max-width: 320px){
+    overflow: scroll;
+  }
+}
+.mat-mdc-form-field{
+  @media (max-width: 500px){
+    padding-bottom: 0;
+  }
+}
+
 .mdc-text-field--focused:not(.mcd-text-field--disabled) .mdc-floating-label{
   color: $btnColor !important;
   background: $btnBg !important;
@@ -18,6 +98,10 @@
   color: $greenOpacity;
   font-size: 18px !important;
   font-family: $font-large;
+  @media (max-width: 320px){
+    font-size: 15px !important;
+    line-height: 20px;
+  }
 }
 
 // value color
@@ -26,6 +110,10 @@
   font-size: 20px !important;
   font-family: $font-large;
   font-weight: bold;
+  @media (max-width: 320px){
+    font-size: 18px !important;
+    line-height: 20px;
+  }
 }
 
 // placeholder color
@@ -77,11 +165,11 @@
 
 //select text active
 .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
-  color: $mainColor !important;
+  color: $btnColor !important;
 }
 //select text panel
 .mat-mdc-select-panel-above .mat-mdc-select-panel{
-  background: $greenText;
+  //background: $greenText;
 }
 
 //text panel list
@@ -107,6 +195,11 @@
 .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full,
 .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full {
   background: $btnBg;
+
+}
+//checkbox checked
+.mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after, .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
+  color: $btnColor;
 }
 
 //text main
@@ -121,35 +214,5 @@
   fill: $mainColor !important;
 }
 
-.popup-wrapper{
-  background: $btnColor;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
-    .btn-box{
-      display: flex;
-      h1{
-        flex: 1 1 auto;
-        text-align: center;
-        color: $mainColor;
-        font-family: $font-small;
-      }
-    }
-  .mat-dialog-content{
-    display: flex;
-    flex-direction: column;
-  }
-  .mat-dialog-actions{
-    text-align: center;
-    font-size: 20px !important;
-    font-family: $font-large;
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-  .mdc-list-item__primary-text {
-    color: $btnBg !important;
-    font-size: 20px !important;
-    font-family: $font-large !important;
-  }
-}
+
 

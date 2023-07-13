@@ -16,7 +16,7 @@ export class PopupComponent {
   ) {
 
   }
-  toppingList: string[] = ['Сніданок', 'Обід', 'Вечеря', 'Комбо: Всі три меню',];
+  toppingList: string[] = ['Сніданок', 'Обід', 'Вечеря', 'Всі 3 меню',];
   closePopup(){
       this.ref.close()
   }
