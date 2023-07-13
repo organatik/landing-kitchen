@@ -24,6 +24,9 @@ import { AfterPopupWindowComponent } from './after-popup-window/after-popup-wind
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TelegramFormBotService } from './services/telegram-form-bot';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -61,6 +64,9 @@ import { PopupMainBlockComponent } from './popup-main-block/popup-main-block.com
     MatInputModule,
     MatCheckboxModule,
     MatSelectModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
+  providers: [TelegramFormBotService],
 })
 export class SharedComponentsModule {}

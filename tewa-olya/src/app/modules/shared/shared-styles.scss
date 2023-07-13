@@ -312,6 +312,19 @@ $font-small: "Montserrat Alternates", sans-serif;
   transition: all 0.3s ease;
 }
 
+.input-error {
+  // border color & width
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__leading,
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__notch,
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled)
+  .mdc-notched-outline__trailing {
+    border-color: red;
+    transition: all 0.3s ease;
+  }
+}
+
 //hover border
 .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(
     .mdc-text-field--focused
