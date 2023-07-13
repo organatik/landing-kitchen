@@ -9,7 +9,7 @@
       color="warn"
       aria-label="Example icon-button with a heart icon"
       class="btn-cancel"
-      (click)="closeDialog()"
+      (click)="closeDialog(false)"
     >
       <mat-icon>cancel</mat-icon>
     </button>
@@ -50,7 +50,7 @@
       <app-main-button
         mat-dialog-close
         [text]="'Надіслати'"
-        (click)="afterSubmitPopup()"
+        (click)="closeDialog(true)"
       ></app-main-button>
     </div>
   </div>

@@ -6,8 +6,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./burger-menu.component.scss'],
 })
 export class BurgerMenuComponent implements OnInit {
-  // active : boolean = false
-
   @Input() init: boolean = false;
   @Output() opened = new EventEmitter<any>();
 
