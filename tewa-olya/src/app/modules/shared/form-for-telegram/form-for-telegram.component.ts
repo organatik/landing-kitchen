@@ -8,8 +8,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./form-for-telegram.component.scss'],
 })
 export class FormForTelegramComponent {
-  // $sendToTelegram = fopen("'https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}'","r");
-
   public nameControl = new FormControl();
   public orderControl = new FormControl();
 
@@ -22,7 +20,7 @@ export class FormForTelegramComponent {
     let name = this.nameControl.value;
     this.http
       .get(
-        `https://api.telegram.org/bot${this.botToken}/sendMessage?chat_id=${this.chatId}&parse_mode=html&text=${name}`,
+        `https://api.telegram.org/bot${this.botToken}/sendMessage?chat_id=${this.chatId}&parse_mode=html&text=${name}`
       )
       .subscribe();
   }
