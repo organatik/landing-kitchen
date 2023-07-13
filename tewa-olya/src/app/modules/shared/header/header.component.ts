@@ -10,34 +10,18 @@ export class HeaderComponent {
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll() {
     this.menuVariable = false;
-    this.menuBtnVariable = false;
-    this.menuHeaderVariable = false;
+    this.menuBtnVariable = false
+    this.menuHeaderVariable = false
 
-    let pos =
-      (document.documentElement.scrollTop || document.body.scrollTop) +
-      document.documentElement.offsetHeight;
-    let max = document.documentElement.scrollHeight;
+    let scrollPosition = window.pageYOffset;
+    let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-    // console.log(pos, maxValueOfScroll)
-    // if(maxValueOfScroll > pos){
-    //   console.log('hello')
-    // }
-
-    console.log(pos, max);
+    this.headerNone = scrollPosition > this.lastScroll
+    this.lastScroll = scrollPosition;
   }
 
-  //   @HostListener("window:scroll", ["$event"])
-  //   onWindowScroll() {
-  //     console.log('hi')
-  // //In chrome and some browser scroll is given to body tag
-  //     let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
-  //
-  // // pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
-  //     if(pos == max )   {
-  //       //Do your action here
-  //       console.log('hello world')
-  //     }
-  //   }
+  public lastScroll = 0
+  public headerNone = false
   public menuVariable = false;
   public menuBtnVariable = false;
   public menuHeaderVariable = false;
