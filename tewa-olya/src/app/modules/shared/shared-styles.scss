@@ -116,6 +116,14 @@ $font-small: "Montserrat Alternates", sans-serif;
   background: $btnBg;
   color: $btnColor;
 }
+.nj-redText {
+  width: fit-content;
+  height: 120%;
+  border-radius: 12px;
+  padding: 8px;
+  background: red;
+  color: $btnColor;
+}
 
 .nj-salatText {
   width: fit-content;
