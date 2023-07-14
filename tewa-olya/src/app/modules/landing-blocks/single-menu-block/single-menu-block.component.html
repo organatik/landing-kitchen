@@ -1,8 +1,8 @@
 <section class="single-menu-bloc">
   <div class="nj-container">
-    <h2 class="title pd-title nj-h2 nj-textCenter n">Що ми пропонуємо</h2>
+    <h2 class="title pd-title nj-h2 nj-textCenter wow animate__animated animate__fadeInLeftBig">Що ми пропонуємо</h2>
 
-    <div class="item" *ngFor="let item of singleMenu; let odd = odd">
+    <div class="item" *ngFor="let item of singleMenuBlock; let odd = odd">
       <app-single-menu [singleMenu]="item" [isRevers]="odd"></app-single-menu>
     </div>
   </div>

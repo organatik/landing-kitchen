@@ -19,7 +19,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay, EffectFlip]);
   selector: 'app-swiper-carousel',
   templateUrl: './swiper-carousel.component.html',
   styleUrls: ['./swiper-carousel.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+
 })
 export class SwiperCarouselComponent implements OnInit {
   countSlider = 0;

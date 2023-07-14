@@ -13,7 +13,7 @@ import SwiperCore, {
 } from 'swiper';
 import { CommentInterface } from '../card-food/interfaces/comment-interface';
 import { SwiperComponent } from 'swiper/angular';
-import { number } from 'yargs';
+
 
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectCube]);
 @Component({

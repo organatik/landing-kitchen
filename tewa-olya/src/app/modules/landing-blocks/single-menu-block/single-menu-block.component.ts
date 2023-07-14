@@ -7,7 +7,7 @@ import { SingleMenuInterface } from '../../shared/card-food/interfaces/single-me
   styleUrls: ['./single-menu-block.component.scss'],
 })
 export class SingleMenuBlockComponent {
-  public singleMenu: SingleMenuInterface[] = [
+  public singleMenuBlock: SingleMenuInterface[] = [
     {
       title: 'Cніданок',
       firstText: ' Ви отримаєте інструкцію',
