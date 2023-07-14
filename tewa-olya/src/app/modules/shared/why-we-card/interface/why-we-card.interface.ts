@@ -1,5 +1,5 @@
 export interface WhyWeCardInterface{
-  img: string;
+  img: string[];
   title: string;
   description: string[];
   active: {

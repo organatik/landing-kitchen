@@ -1,5 +1,5 @@
-import {Component, Input} from '@angular/core';
-import {WhyWeCardInterface} from "./interface/why-we-card.interface";
+import { Component, Input } from '@angular/core';
+import { WhyWeCardInterface } from "./interface/why-we-card.interface";
 
 @Component({
   selector: 'app-why-we-card',
@@ -7,6 +7,5 @@ import {WhyWeCardInterface} from "./interface/why-we-card.interface";
   styleUrls: ['./why-we-card.component.scss']
 })
 export class WhyWeCardComponent {
-
   @Input() whyWeCardData: WhyWeCardInterface | undefined;
 }

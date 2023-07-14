@@ -20,17 +20,16 @@
   </swiper>
 
   <div class="box-arrows">
-    <span
-      class="material-symbols-outlined right"
-      (click)="onPrevClick()"
-      [ngClass]="countSlider > 0 ? 'arrow-active' : ''"
-      >trending_flat</span
-    >
-    <span
-      class="material-symbols-outlined left"
-      (click)="onNextClick()"
-      [ngClass]="countSlider < arrLength - 1 ? 'arrow-active' : ''"
-      >trending_flat</span
-    >
+    <span class="material-symbols-outlined right"
+          (click)="onPrevClick()"
+          [ngClass]="countSlider > 0 ? 'arrow-active' : ''">
+    expand_circle_right
+    </span>
+    <span class="material-symbols-outlined right"
+          (click)="onNextClick()"
+          [ngClass]="countSlider < arrLength - 1 ? 'arrow-active' : ''">
+    expand_circle_left
+    </span>
+
   </div>
 </div>

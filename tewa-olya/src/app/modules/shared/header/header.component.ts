@@ -9,10 +9,12 @@ import { PopupService } from '../../popup.service';
 export class HeaderComponent {
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll() {
+    //при скролле отключаем меню бургер
     this.menuVariable = false;
     this.menuBtnVariable = false
     this.menuHeaderVariable = false
 
+    //при скролле отключаем хедер
     let scrollPosition = window.pageYOffset;
     let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 

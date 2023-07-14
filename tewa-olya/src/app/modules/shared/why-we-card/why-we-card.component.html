@@ -1,15 +1,14 @@
-
-<div class="items">
-
-  <a href="" class="link">
-    <img [src]="whyWeCardData?.img" alt="">
+<div class="items wow animate__animated animate__zoomIn">
+  <a href="" class="link wow animate__animated animate__zoomIn animate__delay-1s">
+        <div class="img" *ngFor="let i of whyWeCardData?.img">
+          <img [src]="i" alt="">
+          <h4 class="nj-h3 title">
+             {{whyWeCardData?.title}}
+          </h4>
+        </div>
   </a>
-  <h4 class="nj-h3 title">
-    {{whyWeCardData?.title}}
-  </h4>
   <div class="box-content">
     <div class="top-items">
-
       <div class="top-text" *ngFor="let text of whyWeCardData?.description">
         <div class="span"></div>
         <p class="nj-p text">{{text}}</p>
@@ -17,8 +16,8 @@
     </div>
 
     <div class="bottom-items">
-      <h3 class="bottom-number subtitel-numbers">{{whyWeCardData?.active?.numberOfActive}}</h3>
-      <p class="bottom-text nj-h4 subtext">{{whyWeCardData?.active?.titleActive}}</p>
+         <h3 class="bottom-number subtitel-numbers">{{whyWeCardData?.active?.numberOfActive}}</h3>
+          <p class="bottom-text nj-h4 subtext">{{whyWeCardData?.active?.titleActive}}</p>
     </div>
   </div>
 
