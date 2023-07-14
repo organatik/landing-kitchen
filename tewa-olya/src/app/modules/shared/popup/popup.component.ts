@@ -30,7 +30,7 @@ export class PopupComponent {
 
   afterSubmitPopup() {
     this.form.markAllAsTouched();
-    console.log(this.form);
+
     if (this.form.invalid) {
       return;
     }
