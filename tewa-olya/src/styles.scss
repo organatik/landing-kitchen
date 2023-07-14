@@ -93,3 +93,14 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+
+.social-box .swiper-wrapper .swiper-cube .swiper-cube-shadow{
+  display: none !important;
+  position: initial;
+  opacity: 0 !important;
+}
+.swiper-cube .swiper-cube-shadow{
+  opacity: 0 !important;
+}
+
