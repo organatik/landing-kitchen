@@ -14,7 +14,7 @@ public whyWeBlock: WhyWeCardInterface[] = [
     title: 'Facebook',
     description: ['Більше 11 000 годин переглядів;', 'На каналі 13 000+ підписників;'],
     active: {
-      numberOfActive: 10000,
+      numberOfActive: 13000,
       titleActive: 'Підписників'
     }
   },
@@ -32,10 +32,10 @@ public whyWeBlock: WhyWeCardInterface[] = [
     link: 'https://t.me/u_teshchi_oli',
     img: ['/assets/images/telegram-2.svg','/assets/images/telegram-1.svg','/assets/images/telegram-2.svg','/assets/images/telegram-1.svg',],
     title: 'Telegram',
-    description: ['Бот для замовлення;', 'Більше 100+ замовників;'],
+    description: ['Наша группа з рецептами;', 'В планах 100+ рецептів;'],
     active: {
       numberOfActive: 100,
-      titleActive: 'Замовників'
+      titleActive: 'Рецептів'
     }
   }
 ];

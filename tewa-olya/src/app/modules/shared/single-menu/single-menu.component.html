@@ -1,9 +1,15 @@
-<div
-  class="box"
+<div class="box"
   [ngStyle]="{ 'flex-direction': isRevers ? 'row-reverse' : 'row' }"
->
+  >
+
   <div class="sub-box wow animate__animated animate__fadeInLeft">
-    <h3 class="sub-title nj-h3">{{ singleMenu?.title }}</h3>
+    <div class="title-price">
+      <h3 class="sub-title nj-h3">{{ singleMenu?.title }} </h3>
+      <p class="number nj-h3 nj-textCenter">
+        {{ singleMenu?.price
+        }}<span class="currency">{{ singleMenu?.currency }}</span>
+      </p>
+    </div>
     <p class="text nj-p">
       {{ singleMenu?.firstText }}
       <span class="nj-salatText">{{ singleMenu?.greenText }}</span>
@@ -15,14 +21,11 @@
         [text]="'Купити'"
         (click)="openPopup()"
       ></app-main-button>
-      <p class="number nj-h3 nj-textCenter">
-        {{ singleMenu?.price
-        }}<span class="currency">{{ singleMenu?.currency }}</span>
-      </p>
     </div>
   </div>
 
   <div class="img wow animate__animated animate__fadeInRight">
     <app-swiper-carousel [singleMenu]="singleMenu"></app-swiper-carousel>
   </div>
+
 </div>

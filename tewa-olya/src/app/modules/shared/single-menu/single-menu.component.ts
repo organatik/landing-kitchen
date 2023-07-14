@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { SingleMenuInterface } from '../card-food/interfaces/single-menu-interface';
-import { PopupService } from '../../popup.service';
 import { PopupComponent } from '../popup/popup.component';
 import { MatDialog } from '@angular/material/dialog';
 
