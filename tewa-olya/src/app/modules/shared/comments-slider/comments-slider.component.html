@@ -10,7 +10,7 @@
     (slideChange)="onSwiperSlideChange()"
   >
     <ng-template swiperSlide *ngFor="let item of content">
-      <app-comments [commentData]="item"></app-comments>
+      <app-comments class="slider-component" [commentData]="item"></app-comments>
     </ng-template>
   </swiper>
 
