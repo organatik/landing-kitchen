@@ -13,13 +13,11 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class PopupComponent {
   public form = this.formBuilder.group({
     name: ['', Validators.required],
-    surname: ['', Validators.required],
-    phone: '',
+    surname: [''],
+    phone: ['', Validators.required],
     order: ['', Validators.required],
-    email: ['', Validators.compose([Validators.required, Validators.email])],
+    email: [''],
   });
-
-  public submitted = false;
 
   constructor(
     private ref: MatDialogRef<PopupComponent>,
@@ -29,12 +27,10 @@ export class PopupComponent {
   ) {}
 
   toppingList: string[] = ['Сніданок', 'Обід', 'Вечеря', 'Всі 3 меню'];
-  closePopup() {
-    this.ref.close();
-  }
 
   afterSubmitPopup() {
-    this.submitted = true;
+    this.form.markAllAsTouched();
+    console.log(this.form);
     if (this.form.invalid) {
       return;
     }

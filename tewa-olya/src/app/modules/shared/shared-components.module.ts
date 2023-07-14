@@ -31,6 +31,7 @@ import { TelegramFormBotService } from './services/telegram-form-bot';
 import { HttpClientModule } from '@angular/common/http';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { SocialSliderComponent } from './social-slider/social-slider.component';
+import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { SocialSliderComponent } from './social-slider/social-slider.component';
     MatSelectModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgxMaskDirective,
   ],
-  providers: [TelegramFormBotService],
+  providers: [TelegramFormBotService, provideNgxMask()],
 })
 export class SharedComponentsModule {}

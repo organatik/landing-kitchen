@@ -248,3 +248,52 @@
 .mat-mdc-select-arrow svg {
   fill: $mainColor !important;
 }
+
+//invalid matFormField
+.mdc-text-field--invalid {
+  border-color: red!important;
+}
+.mdc-text-field--invalid:not(.mdc-text-field--disabled):hover .mdc-line-ripple:before {
+  border-bottom-color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-line-ripple:after {
+  border-bottom-color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled).mdc-text-field--invalid+.mdc-text-field-helper-line .mdc-text-field-helper-text--validation-msg {
+  color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid .mdc-text-field__input {
+  caret-color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-text-field__icon--trailing {
+  color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-line-ripple:before {
+  border-bottom-color: var(--mdc-theme-error, #f44336)
+}
+
+.mat-mdc-form-field-error {
+  color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,.mdc-text-field--invalid:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,.mdc-text-field--invalid:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing {
+  border-color: var(--mdc-theme-error, #f44336)
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,.mdc-text-field--invalid:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,.mdc-text-field--invalid:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+  border-color: var(--mdc-theme-error, #f44336)
+}
+

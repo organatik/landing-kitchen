@@ -22,19 +22,10 @@
           class="nj-p"
           matInput
           placeholder="Українка"
-          formControlName="name"
-          required
+          formControlName="surname"
         />
         <mat-icon matSuffix>edit</mat-icon>
-        <mat-error *ngIf="form?.controls?.name?.errors?.['required']"
-          >Name is required
-        </mat-error>
-        <!--        <mat-hint class="nj-p">Прізвище</mat-hint>-->
       </mat-form-field>
-
-      <!--      <div *ngIf="submitted && form?.controls?.name?.errors?.['required']">-->
-      <!--        Title is required-->
-      <!--      </div>-->
 
       <mat-form-field appearance="outline">
         <mat-label class="">Ведіть ім'я</mat-label>
@@ -42,11 +33,14 @@
           class="nj-p"
           matInput
           placeholder="Леся"
-          formControlName="surname"
+          formControlName="name"
           required
         />
         <mat-icon matSuffix>edit</mat-icon>
-        <!--        <mat-hint class="nj-p">Ім'я</mat-hint>-->
+
+        <mat-error *ngIf="form?.controls?.name?.errors?.['required']"
+          >Не вказане ім’я
+        </mat-error>
       </mat-form-field>
     </div>
 
@@ -58,29 +52,25 @@
           matInput
           placeholder="093-333-33-33"
           formControlName="phone"
+          mask="(000) 000-00-00"
           required
         />
-        <mat-error></mat-error>
+
         <mat-icon matSuffix>phone</mat-icon>
-        <!--      *ngIf="email.invalid" {{getErrorMessage()}}-->
+
+        <mat-error *ngIf="form?.controls?.phone?.errors?.['required']"
+          >Не вказаний телефон
+        </mat-error>
+
+        <mat-error *ngIf="form?.controls?.phone?.errors?.['mask']"
+          >Не вірно вказаний телефон
+        </mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline">
         <mat-label>Ведіть Ваш email</mat-label>
-        <input
-          matInput
-          placeholder="pat@example.com"
-          formControlName="email"
-          required
-        />
-        <mat-error *ngIf="form?.controls?.email?.errors?.['required']"
-          >Email is required
-        </mat-error>
-        <mat-error *ngIf="form?.controls?.email?.errors?.['email']"
-          >incorrect email
-        </mat-error>
+        <input matInput placeholder="pat@example.com" formControlName="email" />
         <mat-icon matSuffix>mail</mat-icon>
-        <!--      *ngIf="email.invalid" {{getErrorMessage()}}-->
       </mat-form-field>
     </div>
 
@@ -95,6 +85,10 @@
             >{{ topping }}</mat-option
           >
         </mat-select>
+
+        <mat-error *ngIf="form?.controls?.order?.errors?.['required']"
+          >Оберіть рецепт, який вам сподобався
+        </mat-error>
       </mat-form-field>
     </div>
 
