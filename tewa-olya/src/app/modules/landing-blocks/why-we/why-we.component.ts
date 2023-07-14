@@ -27,10 +27,10 @@ export class WhyWeComponent {
     },
     {
       img: [
-        '/assets/images/youtube-1.svg',
-        '/assets/images/youtube-2.svg',
-        '/assets/images/youtube-1.svg',
-        '/assets/images/youtube-2.svg',
+        './assets/images/youtube-1.svg',
+        './assets/images/youtube-2.svg',
+        './assets/images/youtube-1.svg',
+        './assets/images/youtube-2.svg',
       ],
       title: 'Youtube',
       description: [
@@ -44,10 +44,10 @@ export class WhyWeComponent {
     },
     {
       img: [
-        '/assets/images/telegram-2.svg',
-        '/assets/images/telegram-1.svg',
-        '/assets/images/telegram-2.svg',
-        '/assets/images/telegram-1.svg',
+        './assets/images/telegram-2.svg',
+        './assets/images/telegram-1.svg',
+        './assets/images/telegram-2.svg',
+        './assets/images/telegram-1.svg',
       ],
       title: 'Telegram',
       description: ['Бот для замовлення;', 'Більше 100+ замовників;'],
