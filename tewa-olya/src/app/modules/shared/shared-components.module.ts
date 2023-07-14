@@ -30,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TelegramFormBotService } from './services/telegram-form-bot';
 import { HttpClientModule } from '@angular/common/http';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { SocialSliderComponent } from './social-slider/social-slider.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
     PopupMainBlockComponent,
     BurgerMenuComponent,
     WhyWeCardComponent,
+    SocialSliderComponent,
   ],
   exports: [
     HeaderComponent,
