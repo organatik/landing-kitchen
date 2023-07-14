@@ -7,6 +7,9 @@
     gap: 1%;
     justify-content: center;
     padding-bottom: 50px;
+    .swiper-component{
+      width: 85%;
+    }
     .item{
       cursor: pointer;
       @media (max-width: 1024px) {
