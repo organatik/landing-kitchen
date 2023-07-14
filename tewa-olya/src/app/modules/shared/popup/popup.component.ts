@@ -1,8 +1,13 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject, ViewEncapsulation } from '@angular/core';
+import {
+  MAT_DIALOG_DATA,
+  MatDialog,
+  MatDialogRef,
+} from '@angular/material/dialog';
 import { AfterPopupWindowComponent } from '../after-popup-window/after-popup-window.component';
 import { TelegramFormBotService } from '../services/telegram-form-bot';
 import { FormBuilder, Validators } from '@angular/forms';
+import { RecipesItems } from '../interfaces/recipesItems.interface';
 
 @Component({
   selector: 'app-popup',
@@ -15,7 +20,7 @@ export class PopupComponent {
     name: ['', Validators.required],
     surname: [''],
     phone: ['', Validators.required],
-    order: ['', Validators.required],
+    order: [[''], Validators.required],
     email: [''],
   });
 
@@ -24,9 +29,21 @@ export class PopupComponent {
     private afterPopupDialog: MatDialog,
     private formBuilder: FormBuilder,
     private telegramFormBotService: TelegramFormBotService,
-  ) {}
+    @Inject(MAT_DIALOG_DATA) public data: string,
+  ) {
+    if (this.data) {
+      this.form.patchValue({
+        order: [data],
+      });
+    }
+  }
 
-  toppingList: string[] = ['Сніданок', 'Обід', 'Вечеря', 'Всі 3 меню'];
+  public recipesList = [
+    RecipesItems.Breakfast,
+    RecipesItems.Lunch,
+    RecipesItems.Dinner,
+    RecipesItems.AllRecipes,
+  ];
 
   afterSubmitPopup() {
     this.form.markAllAsTouched();

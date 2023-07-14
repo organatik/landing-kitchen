@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SingleMenuInterface } from '../../shared/card-food/interfaces/single-menu-interface';
+import { RecipesItems } from '../../shared/interfaces/recipesItems.interface';
 
 @Component({
   selector: 'app-single-menu-block',
@@ -24,6 +25,7 @@ export class SingleMenuBlockComponent {
         'assets/images/1.6.jpg',
         'assets/images/1.5.jpg',
       ],
+      recipeType: RecipesItems.Breakfast,
     },
     {
       title: 'Обід',
@@ -39,6 +41,7 @@ export class SingleMenuBlockComponent {
         'assets/images/2.2.jpg',
         'assets/images/2.1.jpg',
       ],
+      recipeType: RecipesItems.Lunch,
     },
     {
       title: 'Вечеря',
@@ -56,6 +59,7 @@ export class SingleMenuBlockComponent {
         'assets/images/3.8.jpg',
         'assets/images/3.9.jpg',
       ],
+      recipeType: RecipesItems.Dinner,
     },
   ];
 }

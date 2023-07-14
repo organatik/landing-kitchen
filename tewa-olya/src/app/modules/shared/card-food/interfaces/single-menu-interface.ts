@@ -1,3 +1,5 @@
+import { RecipesItems } from '../../interfaces/recipesItems.interface';
+
 export interface SingleMenuInterface {
   title: string;
   firstText: string;
@@ -6,4 +8,5 @@ export interface SingleMenuInterface {
   price: number;
   currency: string;
   images: string[];
+  recipeType: RecipesItems;
 }
