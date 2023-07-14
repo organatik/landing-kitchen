@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { SingleMenuInterface } from '../card-food/interfaces/single-menu-interface';
 import { PopupService } from '../../popup.service';
+import { PopupComponent } from '../popup/popup.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-single-menu',
@@ -10,9 +12,12 @@ import { PopupService } from '../../popup.service';
 export class SingleMenuComponent {
   @Input() singleMenu: SingleMenuInterface | undefined;
   @Input() isRevers: boolean = false;
-  constructor(private popupService: PopupService) {}
+  constructor(private matDialog: MatDialog) {}
 
   openPopup() {
-    this.popupService.openPopup();
+    this.matDialog.open(PopupComponent, {
+      enterAnimationDuration: '700ms',
+      data: this.singleMenu?.recipeType,
+    });
   }
 }

@@ -80,9 +80,9 @@
         <mat-select class="nj-p" multiple formControlName="order">
           <mat-option
             class="nj-p"
-            *ngFor="let topping of toppingList"
-            [value]="topping"
-            >{{ topping }}</mat-option
+            *ngFor="let recipe of recipesList"
+            [value]="recipe"
+            >{{ recipe }}</mat-option
           >
         </mat-select>
 
