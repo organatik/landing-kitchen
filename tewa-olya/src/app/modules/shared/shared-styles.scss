@@ -9,7 +9,7 @@ $font-small: "Montserrat Alternates", sans-serif;
 .nj-h1 {
   font-family: $font-large;
   color: $mainColor;
-  font-size: 59px;
+  font-size: 54px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -18,16 +18,16 @@ $font-small: "Montserrat Alternates", sans-serif;
     font-size: 40px;
     line-height: 135%;
     @media (max-width: 1024px) {
-      font-size: 28px;
-      @media (max-width: 768px) {
-        font-size: 24px;
-        @media (max-width: 500px) {
-          font-size: 20px;
+      font-size: 32px;
+      //@media (max-width: 768px) {
+      //  font-size: 24px;
+      //  @media (max-width: 500px) {
+      //    font-size: 20px;
           @media (max-width: 370px) {
-            font-size: 18px;
+            font-size: 24px;
           }
-        }
-      }
+      //  }
+      //}
     }
   }
 }
@@ -43,15 +43,15 @@ $font-small: "Montserrat Alternates", sans-serif;
     line-height: 150%;
     @media (max-width: 1024px) {
       font-size: 32px;
-      @media (max-width: 768px) {
-        font-size: 24px;
-        @media (max-width: 500px) {
-          font-size: 20px;
+      //@media (max-width: 768px) {
+      //  font-size: 24px;
+      //  @media (max-width: 500px) {
+      //    font-size: 20px;
           @media (max-width: 370px) {
-            font-size: 15px;
+            font-size: 24px;
           }
-        }
-      }
+      //  }
+      //}
     }
   }
 }
@@ -115,6 +115,9 @@ $font-small: "Montserrat Alternates", sans-serif;
   padding: 8px;
   background: $btnBg;
   color: $btnColor;
+  @media (max-width: 450px){
+    padding: 5px;
+  }
 }
 .nj-redText {
   width: fit-content;
@@ -127,13 +130,15 @@ $font-small: "Montserrat Alternates", sans-serif;
 
 .nj-salatText {
   width: fit-content;
-  padding: 4px;
+  padding: 6px;
+  border-radius: 6px;
   background: $greenText;
   color: $mainColor;
   font-family: $font-large;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  line-height: 150%;
   @media (max-width: 500px) {
     font-size: 18px;
     @media (max-width: 370px) {
@@ -173,7 +178,7 @@ $font-small: "Montserrat Alternates", sans-serif;
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     padding: 0 10px;
   }
 }
@@ -218,7 +223,7 @@ $font-small: "Montserrat Alternates", sans-serif;
   justify-content: center;
   padding-bottom: 70px;
   cursor: pointer;
-  @media (max-width: 767px) {
+  @media (max-width: 800px) {
     padding-bottom: 35px;
     @media (max-width: 500px) {
       padding-bottom: 25px;
@@ -291,3 +296,22 @@ $font-small: "Montserrat Alternates", sans-serif;
 .delay-15ms {
   animation-delay: 1.5s;
 }
+.btn-box{
+  display: flex;
+  @media (max-width: 1024px) {
+    justify-content: center;
+    @media (max-width: 600px) {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 600px) {
+    .btn-middle{
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+

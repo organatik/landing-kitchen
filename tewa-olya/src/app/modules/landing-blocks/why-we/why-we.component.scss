@@ -23,8 +23,10 @@
       }
     }
     .box{
-      flex: 0 1 30%;
-      gap: 10%;
+      flex: 0 1 33%;
+      @media (max-width: 600px){
+        width: 100%;
+      }
     }
   }
 }

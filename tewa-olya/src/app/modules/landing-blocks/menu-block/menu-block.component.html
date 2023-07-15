@@ -1,20 +1,20 @@
 <section class="menu-block pd-section">
   <div class="nj-container">
-    <h2 class="title nj-h2 nj-textCenter pd-pb50 wow animate__animated animate__fadeInLeftBig">Діє спеціальна пропозиція</h2>
+    <h2 class="title nj-h1 nj-textCenter pd-title wow animate__animated animate__fadeInLeftBig">Діє спеціальна <span class="nj-redText">пропозиція</span></h2>
     <div class="box">
       <div class="item" *ngFor="let item of menu">
         <app-card-food [cardData]="item"></app-card-food>
       </div>
     </div>
 
-    <div class="btn-box pd-pb50">
-      <h5 class="nj-h2 pd-pb30 wow animate__animated animate__pulse animate__infinite">
+    <div class="special-offer pd-pb50">
+      <h5 class="nj-h2 wow animate__animated animate__pulse animate__infinite">
         За спеціальною ціною <span class="nj-redText">197₴</span>
       </h5>
       <p class="nj-p text wow animate__animated animate__fadeInLeft animate__delay-1s">Ви отримаєте покрокову інструкцію приготування 7 сніданків, 7 обідів і 7 вечерь, з переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожної страви. Додаткова економія 100грн.</p>
 
-      <div class="btn wow animate__animated animate__fadeIn animate__repeat-3 animate__delay-2s">
-        <app-main-button
+      <div class="btn-box btn-box-offer">
+        <app-main-button class="btn-middle btn-offer"
                          [text]="'замовити все'"
                          (click)="openPopup()"
         ></app-main-button>

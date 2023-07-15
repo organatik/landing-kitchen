@@ -5,8 +5,8 @@
         class="title nj-h1 animate__animated animate__fadeInDown"
       >
         Смакуй кожного дня <br />
-        по рецептам <br />
-        від <span class="nj-greenText nj name">тещі Олі</span>
+        по рецептам  від <br />
+        <span class="nj-greenText nj name">тещі Олі</span>
       </h1>
       <p
         class="text nj-p animate__animated animate__fadeInLeftBig delay-03s"
@@ -14,13 +14,15 @@
         Добрий день! У наш час кулінарна тема все швидше набирає обертів, та й сама кулінарія давним-давно зробила крок за межі фантазії. І якщо раніше страви на наших столах мало чим відрізнялися, то тепер наш раціон переповнений достатком і різномаїттям.
 
       </p>
-      <app-main-button
-        class="animate__animated animate__fadeIn delay-06s"
-        [text]="'Запитати'"
-        (click)="openMainPopup()"
-      ></app-main-button>
+      <div class="btn-box">
+        <app-main-button
+          class="btn-middle animate__animated animate__fadeIn delay-06s"
+          [text]="'Запитати'"
+          (click)="openMainPopup()"
+        ></app-main-button>
+      </div>
     </div>
-    <div class="img animate__animated animate__fadeIn delay-09s">
+    <div class="img animate__animated animate__fadeIn delay-13ms">
       <img src="assets/images/food.png" alt="" />
     </div>
   </div>

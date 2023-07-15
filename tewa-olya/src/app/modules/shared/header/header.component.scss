@@ -5,7 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
+  padding: 5px 70px 0;
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -14,6 +14,12 @@ header {
   transform: translateX(0%);
   @media (max-width: 1024px) {
     padding: 10px;
+    @media (max-width: 700px){
+      gap: 50px;
+    }
+
+    @media (max-width: 540px) {
+    }
   }
   img {
     width: 80px;
@@ -21,15 +27,15 @@ header {
     min-height: 100%;
     max-width: 100%;
 
-    @media (max-width: 320px) {
-      width: 50px;
-      height: 50px;
-    }
+      @media (max-width: 320px) {
+        width: 50px;
+        height: 50px;
+      }
   }
   .menu-btn {
     display: none;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 600px) {
       width: 80px;
       height: 80px;
       display: flex;
@@ -72,7 +78,7 @@ header {
     text-align: end;
     flex: 0 1 550px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 600px) {
       position: absolute;
       right: 0px;
       top: 100px;
@@ -109,17 +115,17 @@ header {
       color: $btnBg;
       border-bottom: 2px solid $btnBg;
       font-weight: bold;
-      width: 100%;
+      width: 150%;
     }
     .link:active{
       transition: .5s ease;
-      color: $greenText;
+      color: $greenOpacity;
     }
   }
   .menuClass {
     transform: translateX(0);
     transition: 0.4s ease-in-out;
-    height: 100vh;
+    height: 120vh;
   }
 }
 .headerGreen {

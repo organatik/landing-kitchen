@@ -3,6 +3,7 @@
 .footer {
   background: $background;
   padding: 100px 70px;
+
   @media (max-width: 1024px) {
     padding: 60px 20px;
   }
@@ -10,8 +11,11 @@
     display: flex;
     @media (max-width: 767px) {
       gap: 30px;
-      @media (max-width: 500px) {
-        gap: 0;
+      @media (max-width: 600px) {
+        gap: 20px;
+        @media (max-width: 600px){
+          gap: 20px;
+        }
       }
     }
     .logo-column {
@@ -19,11 +23,13 @@
       padding-left: 10%;
       @media (max-width: 1200px) {
         padding-left: 0;
+        flex: 0 1 25%;
         @media (max-width: 1024px) {
           flex: 0 1 20%;
           @media (max-width: 500px) {
             display: flex;
             align-items: center;
+            padding-bottom: 25px;
           }
         }
       }
@@ -32,7 +38,8 @@
           width: 92px;
           display: block;
           @media (max-width: 500px) {
-            width: 40px;
+            width: 50px;
+            height: 50px;
           }
         }
       }
@@ -41,10 +48,14 @@
       flex: 1 1 auto;
       display: flex;
       justify-content: space-evenly;
-      @media (max-width: 1024px) {
+      @media (max-width: 1200px) {
         justify-content: space-between;
         a {
           font-size: 15px;
+
+          @media (max-width: 700px){
+            font-size: 12px;
+          }
         }
       }
     }
@@ -55,12 +66,14 @@
 }
 .title {
   padding-bottom: 20px;
-  @media (max-width: 767px) {
-    font-size: 17px;
+
     @media (max-width: 767px) {
       font-size: 15px;
+      @media (max-width: 600px) {
+        font-size: 13px;
+      }
     }
-  }
+
 }
 
 .links {
@@ -68,6 +81,10 @@
   flex-direction: column;
   gap: 10px;
   color: $textTransparent;
+
+  @media (max-width: 500px){
+    align-items: center;
+  }
   a {
     color: $textTransparent;
   }
@@ -77,24 +94,48 @@
     align-items: center;
     gap: 15px;
     transition: .5s ease;
+    width: 175px;
+    overflow-y: scroll;
+    @media (max-width: 700px){
+      gap: 5px;
+      width: 120px;
+
+      @media (max-width: 500px){
+        overflow: initial;
+        width: 100%;
+      }
+      span{
+      width: 24px;
+      height: 24px;
+      @media (max-width: 500px){
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        }
+      }
+    }
     a {
       border-bottom: 2px solid transparent;
       transition: .5s ease;
-      width: 100%;
-      @media (max-width: 767px) {
+      width: fit-content;
+      @media (max-width: 500px) {
         display: none;
       }
     }
   }
-  .row-contact:hover a {
-    @media (max-width: 767px) {
+
+  .row-contact:hover a,
+  .row-contact:active a{
+    @media (max-width: 500px) {
       display: block;
+      width: 120%;
     }
   }
 }
 .row{
   border-bottom: 2px solid transparent;
   transition: .5s ease;
+  height: 27px;
 }
 .row-contact{
   border-bottom: 2px solid transparent;
@@ -107,6 +148,10 @@
   color: $btnBg;
   border-bottom: 2px solid $btnBg;
   font-weight: bold;
+}
+
+.social-box h3 .row:active {
+  display: none;
 }
 
 .bottom {
@@ -122,4 +167,10 @@
 }
 .mat-icon {
   width: 35px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 700px){
+    height: 24px;
+    width: 30px;
+  }
 }
