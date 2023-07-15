@@ -4,7 +4,8 @@ export interface WhyWeCardInterface{
   title: string;
   description: string[];
   active: {
-    numberOfActive: number;
+    numberOfActiveBlack: string;
+    numberOfActiveGreen: string;
     titleActive: string
   }
 }

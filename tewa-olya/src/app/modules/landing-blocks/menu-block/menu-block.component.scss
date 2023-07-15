@@ -5,11 +5,10 @@
   .box {
     display: flex;
     gap: 1%;
-    @media (max-width: 1024px) {
-      display: none;
+    @media (max-width: 600px) {
+      flex-direction: column;
     }
     .item {
-      cursor: pointer;
       flex: 0 1 33%;
       border-radius: 20px;
       border: 1px solid #ebebeb;
@@ -22,24 +21,25 @@
       box-shadow: 0 0 0 $cartShadow;
     }
   }
-  .btn-box {
+
+
+  .special-offer {
     text-align: center;
     margin: 0;
-    padding-top: 70px;
-    @media (max-width: 1024px) {
-      padding: 0;
-      margin: 20px 0;
-      h5 {
-        margin: 20px 0;
-      }
-    }
-    h5 {
-      margin: 0;
+    padding-top: 50px;
+    @media (max-width: 600px){
+      padding-top: 0px;
     }
     .text{
       max-width: 650px;
       margin: 0 auto;
       padding-bottom: 50px;
+      @media (max-width: 600px){
+        padding-bottom: 35px;
+      }
+    }
+      .btn-box{
+        justify-content: center;
     }
   }
 

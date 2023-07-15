@@ -16,13 +16,14 @@
       <br />
       {{ singleMenu?.description }}
     </p>
-    <div class="price-box">
-      <app-main-button
+    <div class="btn-box">
+      <app-main-button class="btn-middle"
         [text]="'Купити'"
         (click)="openPopup()"
       ></app-main-button>
     </div>
   </div>
+
 
   <div class="img wow animate__animated animate__fadeInRight">
     <app-swiper-carousel [singleMenu]="singleMenu"></app-swiper-carousel>
