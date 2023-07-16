@@ -1,24 +1,15 @@
 .profile {
   padding: 100px 150px;
-  height: 90vh;
+  height: fit-content;
 
   @media (max-width:1490px){
     padding: 70px 50px;
 
     @media (max-width:1024px){
-    //height: 50vh;
-      height: 35vh;
+
       padding: 0;
       @media (max-width: 600px) {
         padding-bottom: 50px;
-        height: 100%;
-        @media (max-width: 475px){
-          padding-bottom: 0px;
-          height: 80%;
-          @media (max-width: 475px){
-            height: 90%;
-          }
-        }
       }
     }
 

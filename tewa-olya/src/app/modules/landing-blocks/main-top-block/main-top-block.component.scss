@@ -40,7 +40,6 @@
     .sub-box {
       flex: 0 0 50%;
           @media (max-width: 1024px) {
-            flex: 0 0 60%;
             padding-top: 0;
             @media (max-width: 600px) {
               flex: 0 1 50%;
@@ -49,12 +48,29 @@
 
       .title {
         margin: 0 10px 30px 0;
-        @media (max-width: 768px) {
-          margin: 0 0 30px 0;
-          @media (max-width: 600px) {
-            margin: 0 0 20px 0;
+
+        @media (max-width: 1380px){
+          font-size: 48px !important;
+          @media (max-width: 1251px){
+            font-size: 45px !important;
+            @media (max-width: 1189px){
+              font-size: 42px !important;
+              @media (max-width: 1189px){
+                font-size: 38px !important;
+                @media (max-width: 1024px){
+                  font-size: 32px !important;
+                }
+              }
+            }
+            @media (max-width: 768px) {
+              margin: 0 0 30px 0;
+              @media (max-width: 600px) {
+                margin: 0 0 20px 0;
+              }
+            }
           }
         }
+
       }
 
       .text {
@@ -80,7 +96,7 @@
       }
 
       .btn-box{
-
+        width: 90%;
         @media (max-width: 600px){
           text-align: center;
         }
