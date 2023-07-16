@@ -2,10 +2,8 @@
 @import "../../shared/shared-styles.scss";
 
 .comment-block{
-  padding-bottom: 100px;
-  @media (max-width: 600px) {
-    padding-bottom: 50px;
-  }
+  padding-bottom: 50px;
+
   .box{
     padding-bottom: 50px;
     .swiper-component{
