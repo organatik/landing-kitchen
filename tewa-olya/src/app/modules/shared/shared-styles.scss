@@ -190,7 +190,10 @@ $font-small: "Montserrat Alternates", sans-serif;
   }
 }
 .pd-titleSmall {
-  padding: 50px 0 30px;
+  padding: 50px 0 50px;
+  @media (max-width: 768px) {
+    padding: 50px 0 30px;
+  }
 }
 .pd-pb30 {
   padding-bottom: 30px;

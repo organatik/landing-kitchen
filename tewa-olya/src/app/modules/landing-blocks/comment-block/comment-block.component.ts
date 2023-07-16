@@ -34,9 +34,9 @@ export class CommentBlockComponent {
     },
     {
       img: 'assets/images/comment5.svg',
-      title: 'Олецькa Діана',
+      title: 'Лисенко Діана',
       description:
-        'Дякую що з єкономили мій час, діти та чоловік захваті, я задоволена',
+        'Дякую, що зекономили мій час. Діти та чоловік захваті, я задоволена.',
     },
     {
       img: 'assets/images/comment3.svg',
