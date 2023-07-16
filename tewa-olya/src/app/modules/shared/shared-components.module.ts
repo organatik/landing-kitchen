@@ -6,14 +6,15 @@ import { FooterComponent } from './footer/footer.component';
 import { CardFoodComponent } from './card-food/card-food.component';
 import { CommentsComponent } from './comments/comments.component';
 import { SingleMenuComponent } from './single-menu/single-menu.component';
-import { MainButtonComponent } from './main-button/main-button.component';
 
+import { MainButtonComponent } from './main-button/main-button.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { SwiperCarouselComponent } from './swiper-carousel/swiper-carousel.component';
 import { SwiperModule } from 'swiper/angular';
@@ -32,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { SocialSliderComponent } from './social-slider/social-slider.component';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+
 
 @NgModule({
   declarations: [
@@ -76,6 +78,7 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
     ReactiveFormsModule,
     HttpClientModule,
     NgxMaskDirective,
+    MatExpansionModule,
   ],
   providers: [TelegramFormBotService, provideNgxMask()],
 })

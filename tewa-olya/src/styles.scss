@@ -97,7 +97,7 @@ select {
   }
 }
 
-
+//swiper social slider
 .social-box .swiper-wrapper .swiper-cube .swiper-cube-shadow{
   display: none !important;
   position: initial;
@@ -107,3 +107,37 @@ select {
   opacity: 0 !important;
 }
 
+//accordion
+.mat-expansion-panel-header:not([aria-disabled=true]) {
+  background: $btnColor;
+  height: 100%;
+  padding: 10px;
+}
+.mat-expansion-panel-content{
+  background: $greenText !important;
+}
+.mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
+.mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]),
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+
+}
+
+.mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover{
+  background: $btnColor !important;
+}
+.mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+  color: $btnBg !important;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]){
+  box-shadow: none;
+  border: 1px solid transparent !important;
+  border-radius: 20px !important;
+  background: $btnColor;
+
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]):hover{
+  transition: all 0.5s ease;
+  box-shadow: 5px 2px 10px rgba(59, 67, 62, 0.1137254902) !important;
+  border: 1px solid #ebebeb !important;
+}
