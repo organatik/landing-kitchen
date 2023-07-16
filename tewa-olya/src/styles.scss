@@ -140,4 +140,9 @@ select {
   transition: all 0.5s ease;
   box-shadow: 5px 2px 10px rgba(59, 67, 62, 0.1137254902) !important;
   border: 1px solid #ebebeb !important;
+  background: $btnColor;
+}
+
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover{
+  background: $greenText !important;
 }

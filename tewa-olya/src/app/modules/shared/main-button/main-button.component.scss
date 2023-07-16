@@ -9,11 +9,6 @@
   font-family: $font-small !important;
   line-height: 130%;
   font-weight: bold;
-
-  @media (max-width: 600px) {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-  }
+  width: 100%;
 }
 

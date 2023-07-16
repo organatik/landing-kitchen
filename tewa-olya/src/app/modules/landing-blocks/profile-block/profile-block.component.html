@@ -13,30 +13,17 @@
           Давайте знайомитись <br />я <span class="nj-greenText">теща Оля</span>
         </h2>
 
-<!--        <p-->
-<!--          class="text nj-p animate__animated animate__fadeInRightBig delay-06s wow"-->
-<!--        >-->
-<!--          Мене звати Ольга Середа. З самого дитинства люблю куховарити. Спочатку спостерігала за мамою, потім вишуковувала сама нові рецепти, щоб здивувати рідних смаколиками. Стараюсь, щоб мої страви були смачними, готувалися без зайвого клопоту та складалися з доступних інгредієнтів.-->
-<!--          <br>-->
-<!--          <br>-->
-<!--          Кожна нова страва, яку я пропоную підписникам, неодноразово приготована на моїй кухні, перевірена і продегустована рідними. Розумію, як важко молодим домогосподаркам кожен день придумувати меню для сім’ї, і тому, маючи достатню кількість кулінарних відео–рецептів на ютуб каналі, я вирішила підібрати і запропонувати Вам уже розроблені сети з рецептами, описом приготування і прорахуванням часу. Ви лише закуповуєте продукти, витрачаєте певну кількість часу …і смакуєте зі своїми рідними із задоволенням-->
-<!--          <br>-->
-<!--          Я буду тішитись, якщо мої поради не тільки наповнять Ваш стіл новими стравами, а й допоможуть Вам мати більше вільного часу, такого цінного в нашому житті!-->
+        <div class="accardion" *ngFor="let item of accordionData">
+          <app-accordion [AccordionItem] = "item"></app-accordion>
+        </div>
 
-<!--        </p>-->
+        <div class="accardion" *ngFor="let item of accordionDataSecond">
+          <app-accordion [AccordionItem] = "item"></app-accordion>
+        </div>
 
-
-
-                <div class="accardion" *ngFor="let item of accordionData">
-                  <app-accordion [AccordionItem] = "item"></app-accordion>
-                </div>
-                <div class="accardion" *ngFor="let item of accordionDataSecond">
-                  <app-accordion [AccordionItem] = "item"></app-accordion>
-                </div>
-                <div class="accardion" *ngFor="let item of accordionDataLast">
-                  <app-accordion [AccordionItem] = "item"></app-accordion>
-                </div>
-
+        <div class="accardion" *ngFor="let item of accordionDataLast">
+          <app-accordion [AccordionItem] = "item"></app-accordion>
+         </div>
 
       </div>
 

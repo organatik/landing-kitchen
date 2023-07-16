@@ -65,7 +65,7 @@ export class PopupComponent {
     this.telegramFormBotService.sendForm(formattingText);
     this.ref.close();
     this.afterPopupDialog.open(AfterPopupWindowComponent, {
-      enterAnimationDuration: '1000ms',
+      enterAnimationDuration: '700ms',
     });
   }
 }
