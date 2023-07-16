@@ -94,7 +94,7 @@
     align-items: center;
     gap: 15px;
     transition: .5s ease;
-    width: 175px;
+    width: 185px;
     overflow-y: scroll;
     @media (max-width: 700px){
       gap: 5px;
@@ -105,7 +105,7 @@
         width: 100%;
       }
       span{
-      width: 24px;
+      width: 35px;
       height: 24px;
       @media (max-width: 500px){
         text-align: center;
@@ -173,4 +173,7 @@
     height: 24px;
     width: 30px;
   }
+}
+.material-symbols-outlined{
+  width: 35px;
 }
