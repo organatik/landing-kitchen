@@ -29,7 +29,6 @@
           @media (max-width: 500px) {
             display: flex;
             align-items: center;
-            padding-bottom: 25px;
           }
         }
       }
@@ -44,6 +43,7 @@
         }
       }
     }
+
     .box-information {
       flex: 1 1 auto;
       display: flex;
@@ -58,9 +58,24 @@
           }
         }
       }
+      .blocks-column{
+        .links{
+          a{
+            width: 100%;
+          }
+        }
+      }
     }
-    .box-information a:hover{
-      color: $btnBg;
+
+    .contact-column{
+      a {
+        .youtube{
+          @media (max-width: 500px) {
+            max-width: 35px;
+            text-align: left;
+          }
+        }
+      }
     }
   }
 }
@@ -70,7 +85,7 @@
     @media (max-width: 767px) {
       font-size: 15px;
       @media (max-width: 600px) {
-        font-size: 13px;
+       opacity: 0;
       }
     }
 
@@ -81,39 +96,79 @@
   flex-direction: column;
   gap: 10px;
   color: $textTransparent;
-
-  @media (max-width: 500px){
-    align-items: center;
+  width: 175px;
+  @media (max-width: 600px){
+    align-items: flex-start;
+    width: 100%;
   }
+  a::before {
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: $btnBg;
+    transition: .2s;
+    transform: scaleX(0);
+  }
+
+  a:hover:before{
+    color: $btnBg;
+    transform: scaleX(1);
+    transition: .5s ease;
+    span:hover{
+      color: $btnBg;
+    }
+  }
+  .row{
+    height: 24px;
+  }
+  .row:hover{
+    color: $btnBg;
+    transition: .5s ease;
+  }
+
   a {
     color: $textTransparent;
+    width: 175px;
+    position: relative;
   }
 
   .row-contact {
     display: flex;
     align-items: center;
-    gap: 15px;
-    transition: .5s ease;
-    width: 185px;
     overflow-y: scroll;
+    transition: all .5s ease;
     @media (max-width: 700px){
       gap: 5px;
       width: 120px;
-
       @media (max-width: 500px){
         overflow: initial;
         width: 100%;
       }
-      span{
+    }
+    .hv-class{
+      transition: .5s ease;
+    }
+    .hv-class:hover{
+      transition: .5s ease;
+      color: $btnBg !important;
+      width: 25%;
+    }
+
+
+    span{
       width: 35px;
       height: 24px;
+      color: $textTransparent !important;
+
       @media (max-width: 500px){
         text-align: center;
         max-width: 50px;
         margin: 0 auto;
         }
       }
-    }
     a {
       border-bottom: 2px solid transparent;
       transition: .5s ease;
@@ -124,35 +179,12 @@
     }
   }
 
-  .row-contact:hover a,
-  .row-contact:active a{
-    @media (max-width: 500px) {
-      display: block;
-      width: 120%;
-    }
-  }
-}
-.row{
-  border-bottom: 2px solid transparent;
-  transition: .5s ease;
-  height: 27px;
-}
-.row-contact{
-  border-bottom: 2px solid transparent;
-  transition: .5s ease;
-}
-.row:hover,
-.row-contact:hover,
-.row-contact a:hover{
-  transition: .5s ease;
-  color: $btnBg;
-  border-bottom: 2px solid $btnBg;
-  font-weight: bold;
+
+
+
 }
 
-.social-box h3 .row:active {
-  display: none;
-}
+
 
 .bottom {
   background-image: url("/assets/images/footer-bg.svg");
@@ -176,4 +208,10 @@
 }
 .material-symbols-outlined{
   width: 35px;
+}
+
+.opacity-link{
+  @media (max-width: 700px){
+    display: none;
+  }
 }
