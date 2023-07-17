@@ -33,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { SocialSliderComponent } from './social-slider/social-slider.component';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
+import {AccordionComponent} from "./accordion/accordion.component";
 
 
 @NgModule({
@@ -64,22 +65,23 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
     CommentsSliderComponent,
     WhyWeCardComponent,
   ],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    SwiperModule,
-    MatDialogModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatRadioModule,
-    MatInputModule,
-    MatCheckboxModule,
-    MatSelectModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    NgxMaskDirective,
-    MatExpansionModule,
-  ],
+    imports: [
+        CommonModule,
+        MatButtonModule,
+        SwiperModule,
+        MatDialogModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatRadioModule,
+        MatInputModule,
+        MatCheckboxModule,
+        MatSelectModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        NgxMaskDirective,
+        MatExpansionModule,
+        AccordionComponent,
+    ],
   providers: [TelegramFormBotService, provideNgxMask()],
 })
 export class SharedComponentsModule {}

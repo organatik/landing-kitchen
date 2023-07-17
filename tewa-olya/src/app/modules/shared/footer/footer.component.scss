@@ -15,6 +15,7 @@
         gap: 20px;
         @media (max-width: 600px){
           gap: 20px;
+          align-items: flex-end;
         }
       }
     }
@@ -36,9 +37,8 @@
         .logo {
           width: 92px;
           display: block;
-          @media (max-width: 500px) {
-            width: 50px;
-            height: 50px;
+          @media (max-width: 600px) {
+            width: 80px;
           }
         }
       }
@@ -50,15 +50,27 @@
       justify-content: space-evenly;
       @media (max-width: 1200px) {
         justify-content: space-between;
-        a {
-          font-size: 15px;
-
-          @media (max-width: 700px){
-            font-size: 12px;
-          }
+        @media (max-width: 700px){
+          justify-content: initial;
         }
       }
+
+        p {
+          font-size: 15px;
+          color: $textTransparent;
+          @media (max-width: 700px){
+            font-size: 12px;
+            justify-content: flex-end;
+          }
+        }
       .blocks-column{
+        @media (max-width: 700px){
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          flex: 1 1 auto;
+        }
+
         .links{
           a{
             width: 100%;
@@ -96,48 +108,23 @@
   flex-direction: column;
   gap: 10px;
   color: $textTransparent;
-  width: 175px;
   @media (max-width: 600px){
     align-items: flex-start;
-    width: 100%;
-  }
-  a::before {
-    content: '';
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    width: 80%;
-    height: 2px;
-    background: $btnBg;
-    transition: .2s;
-    transform: scaleX(0);
   }
 
-  a:hover:before{
-    color: $btnBg;
-    transform: scaleX(1);
-    transition: .5s ease;
-    span:hover{
-      color: $btnBg;
-    }
-  }
   .row{
-    height: 24px;
-  }
-  .row:hover{
-    color: $btnBg;
-    transition: .5s ease;
+    height: 30px;
+    width: fit-content;
+    color: $textTransparent;
   }
 
   a {
     color: $textTransparent;
-    width: 175px;
-    position: relative;
   }
 
   .row-contact {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     overflow-y: scroll;
     transition: all .5s ease;
     @media (max-width: 700px){
@@ -148,21 +135,21 @@
         width: 100%;
       }
     }
+    .mail{
+      width: 125px;
+    }
     .hv-class{
       transition: .5s ease;
     }
     .hv-class:hover{
       transition: .5s ease;
       color: $btnBg !important;
-      width: 25%;
     }
 
 
     span{
-      width: 35px;
-      height: 24px;
       color: $textTransparent !important;
-
+      width: 100%;
       @media (max-width: 500px){
         text-align: center;
         max-width: 50px;
@@ -178,9 +165,6 @@
       }
     }
   }
-
-
-
 
 }
 
@@ -214,4 +198,45 @@
   @media (max-width: 700px){
     display: none;
   }
+}
+
+.links-box::before {
+  content: '';
+  bottom: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: $btnBg;
+  transition: .2s;
+  transform: scaleX(0);
+}
+.links-box{
+  position: relative;
+  display: inline-block;
+  @media (max-width: 600px){
+    width: 100%;
+  }
+}
+.links-box:hover:before{
+  transition: .5s ease;
+  width: 100%;
+  transform: scaleX(1);
+  @media (max-width: 600px){
+    width: 0;
+  }
+}
+
+.my-hover:hover{
+  color: $btnBg;
+}
+
+.icon{
+  width: 30px !important;
+  height: 30px !important;
+  padding-right: 10px;
+  @media (max-width: 700px){
+    display: inline-block;
+    margin-left: auto;
+  }
+
 }

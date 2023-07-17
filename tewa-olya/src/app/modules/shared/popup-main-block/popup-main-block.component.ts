@@ -38,9 +38,12 @@ export class PopupMainBlockComponent {
   afterSubmitPopup() {
     this.form.markAllAsTouched();
 
+
     if (this.form.invalid) {
       return;
+
     }
+
 
     const formValue = this.form.value;
     const formattingText = `
@@ -59,10 +62,4 @@ export class PopupMainBlockComponent {
   }
 
 
-
-
-
-  // closeDialog(closedStatus: boolean) {
-  //   this.dialogRef.close(closedStatus);
-  // }
 }

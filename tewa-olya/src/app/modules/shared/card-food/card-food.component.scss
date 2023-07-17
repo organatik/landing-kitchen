@@ -8,7 +8,9 @@
     padding: 0 10px;
     .first-text {
       text-align: center;
+      @media (max-width: 600px){
 
+      }
       span {
         margin-left: 5%;
         @media (max-width: 1024px){
