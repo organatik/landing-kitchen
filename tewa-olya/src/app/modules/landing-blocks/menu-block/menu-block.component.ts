@@ -37,6 +37,7 @@ export class MenuBlockComponent {
 
   constructor(private popupService: PopupService) {}
 
+
   openPopup() {
     this.popupService.openPopup();
   }
