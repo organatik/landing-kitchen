@@ -13,15 +13,15 @@
           Давайте знайомитись <br />я <span class="nj-greenText">теща Оля</span>
         </h2>
 
-        <div class="accardion" *ngFor="let item of accordionData">
+        <div class="accardion animate__animated animate__fadeInUp wow delay-03s" *ngFor="let item of accordionData">
           <app-accordion [AccordionItem] = "item"></app-accordion>
         </div>
 
-        <div class="accardion" *ngFor="let item of accordionDataSecond">
+        <div class="accardion animate__animated animate__fadeInUp wow delay-06s" *ngFor="let item of accordionDataSecond">
           <app-accordion [AccordionItem] = "item"></app-accordion>
         </div>
 
-        <div class="accardion" *ngFor="let item of accordionDataLast">
+        <div class="accardion animate__animated animate__fadeInUp wow delay-09s" *ngFor="let item of accordionDataLast">
           <app-accordion [AccordionItem] = "item"></app-accordion>
          </div>
 
