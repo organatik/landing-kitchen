@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
-import {CardFoodInterface} from '../../shared/card-food/interfaces/card-food-interface';
-import {AccordionInterface} from "../../shared/interfaces/accordion.interface";
-import {RecipesItems} from "../../shared/interfaces/recipesItems.interface";
-import {MatDialog} from "@angular/material/dialog";
-import {PopupComponent} from "../../shared/popup/popup.component";
+import {Component, HostListener, Input} from '@angular/core';
+import { CardFoodInterface } from '../../shared/card-food/interfaces/card-food-interface';
+import { AccordionInterface } from '../../shared/interfaces/accordion.interface';
+import { RecipesItems } from '../../shared/interfaces/recipesItems.interface';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupComponent } from '../../shared/popup/popup.component';
 
 @Component({
   selector: 'app-menu-block',
@@ -11,55 +11,56 @@ import {PopupComponent} from "../../shared/popup/popup.component";
   styleUrls: ['./menu-block.component.scss'],
 })
 export class MenuBlockComponent {
-  public recipeType: RecipesItems = RecipesItems.AllRecipes
+  public recipeType: RecipesItems = RecipesItems.AllRecipes;
   public menu: CardFoodInterface[] = [
     {
       img: 'assets/images/menu2.svg',
-      title: 'Сніданок',
-      firstDescription: '7 сніданків',
+      title: 'Сніданоки',
+      firstDescription: '7 рецептів',
       description:
         'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного сніданку.',
       price: 99,
     },
     {
       img: 'assets/images/menu3.svg',
-      title: 'Обід',
-      firstDescription: '7 обідів',
+      title: 'Обіди',
+      firstDescription: '7 рецептів',
       description:
         'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.',
       price: 99,
     },
     {
       img: 'assets/images/menu1.svg',
-      title: 'Вечеря',
-      firstDescription: '7 вечерь',
+      title: 'Вечері',
+      firstDescription: '7 рецептів',
       description:
         'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожної вечері.',
       price: 99,
     },
   ];
-  public accordeonData: AccordionInterface[] = [
+
+  public accordeonData: AccordionInterface[] =[
     {
-      text :'Ви отримаєте 7 сніданків',
-      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного сніданку.'
-    },
-    {
-      text :'Ви отримаєте 7 обідів',
+      text: 'Ви отримаєте 7 рецпітів сніданків',
       textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.'
     },
     {
-      text :'Ви отримаєте 7 вечерь',
-      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожної вечері.'
+      text: 'Ви отримаєте 7 рецпітів обідів',
+      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.'
+    },
+    {
+      text: 'Ви отримаєте 7 рецпітів вечерь',
+      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.'
     }
-
   ]
+  constructor(private matDialog: MatDialog) {
+  }
 
-  constructor(private matDialog: MatDialog) {}
-  openPopup(){
+  openPopup() {
     this.matDialog.open(PopupComponent, {
       enterAnimationDuration: '700ms',
-      data: this.recipeType
-    })
+      data: this.recipeType,
+    });
   }
 
 }
