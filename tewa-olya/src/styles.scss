@@ -146,3 +146,7 @@ select {
 .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover{
   background: $greenText !important;
 }
+
+.mat-content {
+  flex-direction: column !important;
+}

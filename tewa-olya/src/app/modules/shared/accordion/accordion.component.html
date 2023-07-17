@@ -2,10 +2,10 @@
   <mat-expansion-panel (opened)="panelOpenState = false"
                        (closed)="panelOpenState = true">
     <mat-expansion-panel-header>
-        <p class="nj-p">{{AccordionItem?.text}}</p>
+        <p class="nj-p accordion-title">{{AccordionItem?.text}}</p>
       <mat-panel-description>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p class="nj-p">{{AccordionItem?.textNext}}</p>
+    <p class="nj-p accordion-text">{{AccordionItem?.textNext}}</p>
   </mat-expansion-panel>
 </mat-accordion>
