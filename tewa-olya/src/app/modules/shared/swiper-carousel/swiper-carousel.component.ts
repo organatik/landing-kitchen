@@ -10,6 +10,7 @@ import SwiperCore, {
   Pagination,
   Autoplay,
   EffectFlip,
+
 } from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
 import { SingleMenuInterface } from '../card-food/interfaces/single-menu-interface';

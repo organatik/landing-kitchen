@@ -8,4 +8,5 @@ import { CardFoodInterface } from './interfaces/card-food-interface';
 })
 export class CardFoodComponent {
   @Input() cardData: CardFoodInterface | undefined;
+
 }

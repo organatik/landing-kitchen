@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
-import { CardFoodInterface } from '../../shared/card-food/interfaces/card-food-interface';
-import { PopupService } from '../../popup.service';
+import {Component} from '@angular/core';
+import {CardFoodInterface} from '../../shared/card-food/interfaces/card-food-interface';
+import {AccordionInterface} from "../../shared/interfaces/accordion.interface";
+import {RecipesItems} from "../../shared/interfaces/recipesItems.interface";
+import {MatDialog} from "@angular/material/dialog";
+import {PopupComponent} from "../../shared/popup/popup.component";
 
 @Component({
   selector: 'app-menu-block',
@@ -8,6 +11,7 @@ import { PopupService } from '../../popup.service';
   styleUrls: ['./menu-block.component.scss'],
 })
 export class MenuBlockComponent {
+  public recipeType: RecipesItems = RecipesItems.AllRecipes
   public menu: CardFoodInterface[] = [
     {
       img: 'assets/images/menu2.svg',
@@ -34,11 +38,28 @@ export class MenuBlockComponent {
       price: 99,
     },
   ];
+  public accordeonData: AccordionInterface[] = [
+    {
+      text :'Ви отримаєте 7 сніданків',
+      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного сніданку.'
+    },
+    {
+      text :'Ви отримаєте 7 обідів',
+      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного обіду.'
+    },
+    {
+      text :'Ви отримаєте 7 вечерь',
+      textNext: 'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожної вечері.'
+    }
 
-  constructor(private popupService: PopupService) {}
+  ]
 
-
-  openPopup() {
-    this.popupService.openPopup();
+  constructor(private matDialog: MatDialog) {}
+  openPopup(){
+    this.matDialog.open(PopupComponent, {
+      enterAnimationDuration: '700ms',
+      data: this.recipeType
+    })
   }
+
 }
