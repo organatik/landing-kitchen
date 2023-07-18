@@ -10,6 +10,9 @@
   .title {
     text-align: center;
     padding: 50px 0 50px;
+    @media (max-width: 500px){
+      padding: 50px 0 30px;
+    }
   }
   .box {
     display: flex;
