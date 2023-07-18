@@ -1,10 +1,9 @@
 @import "../../shared/colors.scss";
-@import "../../shared/shared-styles.scss";
 
 .single-menu-bloc {
   .title {
     @media (max-width: 500px) {
-      padding: 50px 0 0;
+      padding: 50px 0 30px;
     }
   }
   .item {

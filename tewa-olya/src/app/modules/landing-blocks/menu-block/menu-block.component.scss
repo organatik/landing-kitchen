@@ -85,6 +85,11 @@
     text-align: center;
     margin: 0;
 
+    h5{
+      @media (max-width: 375px){
+        font-size: 30px;
+      }
+    }
     .text{
       max-width: 650px;
       margin: 0 auto;
@@ -97,7 +102,6 @@
         justify-content: center;
     }
   }
-
 }
 
 

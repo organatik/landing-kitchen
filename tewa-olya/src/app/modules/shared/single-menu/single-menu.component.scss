@@ -32,13 +32,26 @@
       padding-bottom: 30px;
       @media (max-width: 800px){
         max-width: 100%;
+        padding-bottom: 30px;
         h3,
         p{
           font-size: 32px;
+          padding: 0;
+        }
+        @media (max-width: 500px){
+            padding-bottom: 20px;
+          h3,
+          p{
+            font-size: 28px;
+          }
         }
       }
+
       .nj-greenText{
         padding: 15px 10px 10px!important;
+        @media (max-width: 500px){
+          padding: 8px 7px 4px !important;
+         }
       }
     }
     .sub-title {

@@ -19,15 +19,9 @@ $font-small: "Montserrat Alternates", sans-serif;
     line-height: 135%;
     @media (max-width: 1024px) {
       font-size: 32px;
-      //@media (max-width: 768px) {
-      //  font-size: 24px;
-      //  @media (max-width: 500px) {
-      //    font-size: 20px;
           @media (max-width: 370px) {
-            font-size: 24px;
+            font-size: 22px;
           }
-      //  }
-      //}
     }
   }
 }
@@ -42,16 +36,10 @@ $font-small: "Montserrat Alternates", sans-serif;
     font-size: 40px;
     line-height: 150%;
     @media (max-width: 1024px) {
-      font-size: 32px;
-      //@media (max-width: 768px) {
-      //  font-size: 24px;
-      //  @media (max-width: 500px) {
-      //    font-size: 20px;
+      font-size: 30px;
           @media (max-width: 370px) {
-            font-size: 24px;
+            font-size: 22px;
           }
-      //  }
-      //}
     }
   }
 }
@@ -159,8 +147,11 @@ $font-small: "Montserrat Alternates", sans-serif;
   color: $pColor;
   @media (max-width: 500px) {
     font-size: 15px;
-    @media (max-width: 370px) {
-      font-size: 12px;
+    @media (max-width: 375px) {
+      font-size: 14px;
+      @media (max-width: 350px) {
+        font-size: 13px;
+      }
     }
   }
 }
@@ -320,7 +311,7 @@ $font-small: "Montserrat Alternates", sans-serif;
   }
   @media (max-width: 600px) {
     .btn-middle{
-      width: 80%;
+      width: 85%;
       text-align: center;
     }
   }
