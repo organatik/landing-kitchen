@@ -31,6 +31,7 @@ export class PopupComponent {
     private telegramFormBotService: TelegramFormBotService,
     @Inject(MAT_DIALOG_DATA) public data: string,
   ) {
+
     if (this.data) {
       this.form.patchValue({
         order: [data],
@@ -55,17 +56,19 @@ export class PopupComponent {
     const formValue = this.form.value;
     const formattingText = `
       Нове замовлення: %0A
-      Имя: ${formValue.name}%0A
-      Фамилия: ${formValue.surname}%0A
-      Telephone: ${formValue.name}%0A
-      email: ${formValue.email}%0A
-      ORDER: ${formValue.order}%0A
+      Ім'я: ${formValue.name}%0A
+      Прізвище: ${formValue.surname}%0A
+      Телефон: ${formValue.name}%0A
+      Ємаіл: ${formValue.email}%0A
+      ЗАМОВЛЕННЯ: ${formValue.order}%0A
     `;
 
-    this.telegramFormBotService.sendForm(formattingText);
-    this.ref.close();
-    this.afterPopupDialog.open(AfterPopupWindowComponent, {
-      enterAnimationDuration: '1000ms',
-    });
+    if (formValue.order && formValue.order[0].trim() !== '') {
+      this.telegramFormBotService.sendForm(formattingText);
+      this.afterPopupDialog.open(AfterPopupWindowComponent, {
+        enterAnimationDuration: '700ms',
+      });
+    }
   }
+
 }

@@ -9,6 +9,7 @@ import { SharedComponentsModule } from '../shared/shared-components.module';
 import { SingleMenuBlockComponent } from './single-menu-block/single-menu-block.component';
 import { CommentBlockComponent } from './comment-block/comment-block.component';
 import { MatButtonModule } from '@angular/material/button';
+import {AccordionComponent} from "../shared/accordion/accordion.component";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,6 @@ import { MatButtonModule } from '@angular/material/button';
     SingleMenuBlockComponent,
     CommentBlockComponent,
   ],
-  imports: [CommonModule, SharedComponentsModule, MatButtonModule],
+  imports: [CommonModule, SharedComponentsModule, MatButtonModule, AccordionComponent],
 })
 export class LandingBlocksModule {}

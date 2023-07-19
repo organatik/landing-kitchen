@@ -1,5 +1,5 @@
 <div class="popup-wrapper" [formGroup]="form">
-  <div class="btn-box">
+  <div class="top-title-box">
     <h1 mat-dialog-title class="nj-h4">
       Заповніть форму для <span class="nj-greenText">замовлення</span>
     </h1>
@@ -59,7 +59,8 @@
         <mat-icon matSuffix>phone</mat-icon>
 
         <mat-error *ngIf="form?.controls?.phone?.errors?.['required']"
-          >Не вказаний телефон
+          >
+
         </mat-error>
 
         <mat-error *ngIf="form?.controls?.phone?.errors?.['mask']"
