@@ -24,8 +24,6 @@
           padding-top: 10px;
           padding-left: 0;
         }
-        @media (max-width: 800px) {
-        }
       }
     }
     flex: 0 0 50%;
@@ -53,9 +51,9 @@
       }
 
       .nj-greenText{
-        padding: 15px 10px 10px!important;
+        padding: 13px 10px 0px!important;
         @media (max-width: 500px){
-          padding: 8px 7px 4px !important;
+          padding: 8px 7px 0px !important;
          }
       }
     }
@@ -81,7 +79,7 @@
       }
     }
     .text {
-      max-width: 425px;
+      max-width: 410px;
       padding-bottom: 50px;
       @media (max-width: 1024px) {
         max-width: 100%;
@@ -94,9 +92,6 @@
 
   .img{
     width: 100%;
-    //@media (max-width: 1024px){
-    //
-    //}
     display: flex;
     visibility: visible;
     animation-name: fadeInRight;
