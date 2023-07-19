@@ -10,9 +10,11 @@
   }
 
   .sub-box {
-    margin-left: 100px;
-    padding-top: 50px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 10%;
     @media (max-width: 1500px) {
       margin-left: 0;
       @media (max-width: 1024px) {
@@ -20,6 +22,9 @@
         flex: 0 1 100%;
         @media (max-width: 800px) {
           padding-top: 10px;
+          padding-left: 0;
+        }
+        @media (max-width: 800px) {
         }
       }
     }
@@ -89,6 +94,15 @@
 
   .img{
     width: 100%;
+    //@media (max-width: 1024px){
+    //
+    //}
+    display: flex;
+    visibility: visible;
+    animation-name: fadeInRight;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 .flex-reverse {
