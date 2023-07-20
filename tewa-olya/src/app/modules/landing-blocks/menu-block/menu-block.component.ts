@@ -15,7 +15,7 @@ export class MenuBlockComponent {
   public menu: CardFoodInterface[] = [
     {
       img: 'assets/images/menu2.svg',
-      title: 'Сніданоки',
+      title: 'Сніданки',
       firstDescription: '7 сніданків',
       description:
         'З переліком та кількістю інгрідієнтів, описом і прорахуванням часу, а також посилання на відео-рецепт кожного сніданку.',
