@@ -93,7 +93,10 @@
             font-size: 42px;
             padding-bottom: 5px;
             @media (max-width: 420px){
-              font-size: 38px;
+              font-size: 36px;
+              @media (max-width: 375px){
+                font-size: 32px;
+              }
             }
           }
         }
@@ -108,7 +111,10 @@
             font-size: 42px;
             padding-bottom: 5px;
             @media (max-width: 420px){
-              font-size: 38px;
+              font-size: 36px;
+              @media (max-width: 375px){
+                font-size: 32px;
+              }
             }
           }
         }
