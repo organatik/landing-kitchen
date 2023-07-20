@@ -17,23 +17,5 @@ export class MainTopBlockComponent {
     this.popupService.openMainPopup();
   }
 
-
-
-  // constructor(private matDialog: MatDialog) {}
-  // public openMainPopup() {
-  //   this.dialogRef = this.matDialog.open(PopupMainBlockComponent, {
-  //     enterAnimationDuration: '700ms',
-  //   });
-  //
-  //   this.dialogRef.afterClosed().subscribe((result) =>{
-  //     if(result){
-  //     this.matDialog.open(AfterPopupWindowComponent, {
-  //       enterAnimationDuration: '700ms'
-  //     })
-  //     }
-  // })
-  // }
-
-
 }
 
