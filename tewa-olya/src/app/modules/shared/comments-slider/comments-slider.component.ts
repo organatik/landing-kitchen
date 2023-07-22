@@ -55,7 +55,6 @@ export class CommentsSliderComponent implements OnInit {
 
   updateSlidesPerView(): void {
     const windowWidth = window.innerWidth;
-    console.log(windowWidth)
     if (windowWidth <= 600) {
       this.slidesPerView = 1;
       this.slidesPerGroup = 1;
