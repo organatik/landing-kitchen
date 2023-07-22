@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class TelegramFormBotService {
-  private botToken = '5888586424:AAGp06FzYCylNjUGgwJhDbRxxaQlMa-vfjs';
-  private chatId = '5075411916';
+  private botToken = '6508132109:AAGPMx2dS0-plEW_eTYRaievq6BIZ6czqC4';
+  private chatId = '338046651';
 
   constructor(private httpService: HttpClient) {}
 
