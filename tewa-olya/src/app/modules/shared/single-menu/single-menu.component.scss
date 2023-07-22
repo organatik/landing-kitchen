@@ -14,16 +14,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    padding-left: 10%;
-    @media (max-width: 1500px) {
-      margin-left: 0;
+    //padding-left: 15%;
+
       @media (max-width: 1024px) {
         padding-top: 40px;
         flex: 0 1 100%;
         @media (max-width: 800px) {
           padding-top: 10px;
-          padding-left: 0;
-        }
       }
     }
     flex: 0 0 50%;
@@ -90,8 +87,11 @@
     }
   }
 
+
   .img{
     width: 100%;
+    display: flex;
+    justify-content: start;
   }
 }
 .flex-reverse {

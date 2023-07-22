@@ -7,7 +7,7 @@
   @media (max-width: 1024px) {
     padding: 60px 20px;
     @media (max-width: 600px){
-      padding: 40px 20px;
+      padding: 0px 0px 20px;
     }
   }
   .footer-box {
@@ -101,7 +101,7 @@
 
     @media (max-width: 767px) {
       font-size: 15px;
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
        opacity: 0;
       }
     }
@@ -165,7 +165,7 @@
       border-bottom: 2px solid transparent;
       transition: .5s ease;
       width: fit-content;
-      @media (max-width: 500px) {
+      @media (max-width: 700px) {
         display: none;
       }
     }
