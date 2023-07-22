@@ -239,9 +239,15 @@ $font-small: "Montserrat Alternates", sans-serif;
     color: $btnBg;
     transition: opacity 0.2s ease;
     opacity: 0.5;
-    @media (max-width: 767px) {
-      font-size: 46px;
+
+    @media (max-width: 1024px) {
+      font-size: 60px;
+
+      @media (max-width: 767px) {
+        font-size: 50px;
+      }
     }
+
   }
   .right {
     transform: rotate(180deg);

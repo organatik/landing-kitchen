@@ -51,8 +51,12 @@
       justify-content: space-evenly;
       @media (max-width: 1200px) {
         justify-content: space-between;
-        @media (max-width: 700px){
-          justify-content: initial;
+        @media (max-width: 1024px){
+          align-items: center;
+          justify-content: space-around;
+          @media (max-width: 700px){
+            justify-content: initial;
+          }
         }
       }
 
