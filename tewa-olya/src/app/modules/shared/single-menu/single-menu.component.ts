@@ -11,6 +11,8 @@ import { MatDialog } from '@angular/material/dialog';
 export class SingleMenuComponent {
   @Input() singleMenu: SingleMenuInterface | undefined;
   @Input() isRevers: boolean = false;
+  @Input() isReversText: boolean = false;
+
   constructor(private matDialog: MatDialog) {}
 
   openPopup() {

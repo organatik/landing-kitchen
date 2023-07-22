@@ -26,6 +26,7 @@ export class PopupComponent {
 
   constructor(
     private ref: MatDialogRef<PopupComponent>,
+    public dialogRef: MatDialogRef<PopupComponent>,
     private afterPopupDialog: MatDialog,
     private formBuilder: FormBuilder,
     private telegramFormBotService: TelegramFormBotService,
@@ -64,6 +65,7 @@ export class PopupComponent {
     `;
 
     if (formValue.order && formValue.order[0].trim() !== '') {
+      this.dialogRef.close();
       this.telegramFormBotService.sendForm(formattingText);
       this.afterPopupDialog.open(AfterPopupWindowComponent, {
         enterAnimationDuration: '700ms',
