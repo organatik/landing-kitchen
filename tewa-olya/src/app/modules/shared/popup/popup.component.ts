@@ -60,7 +60,7 @@ export class PopupComponent {
       Ім'я: ${formValue.name}%0A
       Прізвище: ${formValue.surname}%0A
       Телефон: ${formValue.name}%0A
-      Ємаіл: ${formValue.email}%0A
+      Емаіл: ${formValue.email}%0A
       ЗАМОВЛЕННЯ: ${formValue.order}%0A
     `;
 

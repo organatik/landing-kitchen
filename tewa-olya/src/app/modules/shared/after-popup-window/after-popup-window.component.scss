@@ -17,8 +17,16 @@ h1 {
 .mat-dialog-content {
   padding: 0 20px;
 
-  p{
-    font-size: 15px !important;
+  @media (max-width: 600px){
+    padding: 0 20px 10px;
+  }
+
+  .text-wrapping{
+    @media (max-width: 600px){
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 .mat-dialog-actions {
