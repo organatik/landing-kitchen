@@ -14,15 +14,13 @@ export class TelegramFormBotService {
   // private chatIdSeredaOlga = '5135402412';
   // private chatIdVakulenkoYuliia = '125606045';
   // private chatIds = [this.myChatId, this.chatIdVakulenkoVasyl, this.chatIdSeredaOlga, this.chatIdVakulenkoYuliia];
-  private chatIds = chatId
-
+  private chatIds = chatId;
 
 
   constructor(private httpService: HttpClient) {
   }
     public sendForm(formData: string) {
       this.chatIds.forEach((chat) =>{
-        console.log(chat.numberId, chat.nameId)
         this.httpService
           .get(
             `https://api.telegram.org/bot${this.botToken}/sendMessage?chat_id=${chat.numberId}&parse_mode=html&text=${formData}`,

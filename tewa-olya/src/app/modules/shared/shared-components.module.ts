@@ -19,7 +19,6 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { SwiperCarouselComponent } from './swiper-carousel/swiper-carousel.component';
 import { SwiperModule } from 'swiper/angular';
 import { CommentsSliderComponent } from './comments-slider/comments-slider.component';
-import { FormComponent } from './form/form.component';
 import { PopupComponent } from './popup/popup.component';
 import { AfterPopupWindowComponent } from './after-popup-window/after-popup-window.component';
 import { MatInputModule } from '@angular/material/input';
@@ -46,7 +45,6 @@ import {AccordionComponent} from "./accordion/accordion.component";
     MainButtonComponent,
     SwiperCarouselComponent,
     CommentsSliderComponent,
-    FormComponent,
     PopupComponent,
     AfterPopupWindowComponent,
     PopupMainBlockComponent,
