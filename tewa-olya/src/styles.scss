@@ -122,6 +122,9 @@ select {
 
 }
 
+.mat-expansion-panel-body{
+  padding: 10px 24px !important;
+}
 .mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover{
   background: $btnColor !important;
 }
