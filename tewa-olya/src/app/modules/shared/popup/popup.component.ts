@@ -59,7 +59,7 @@ export class PopupComponent {
       Нове замовлення: %0A
       Ім'я: ${formValue.name}%0A
       Прізвище: ${formValue.surname}%0A
-      Телефон: ${formValue.name}%0A
+      Телефон: ${formValue.phone}%0A
       Емаіл: ${formValue.email}%0A
       ЗАМОВЛЕННЯ: ${formValue.order}%0A
     `;

@@ -50,7 +50,7 @@ export class PopupMainBlockComponent {
     Нове запитання: %0A
     Имя: ${formValue.name}%0A
     Фамилия: ${formValue.surname}%0A
-    Telephone: ${formValue.name}%0A
+    Telephone: ${formValue.phone}%0A
     ЗАПИТАННЯ: ${formValue.question}%0A
   `;
 
