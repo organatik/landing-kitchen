@@ -56,6 +56,9 @@
     }
     .sub-title {
       padding: 0;
+      @media (max-width: 350px) {
+        font-size: 22px !important;
+      }
     }
     .price-box {
       display: flex;

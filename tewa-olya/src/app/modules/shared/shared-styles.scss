@@ -13,16 +13,17 @@
   font-weight: 700;
   line-height: 130%;
 
-  @media (max-width: 1200px) {
-    font-size: 40px;
-    line-height: 135%;
-    @media (max-width: 1024px) {
-      font-size: 32px;
-          @media (max-width: 370px) {
-            font-size: 22px;
-          }
+    @media (max-width: 1200px) {
+      font-size: 40px;
+      line-height: 135%;
+      @media (max-width: 1024px) {
+        font-size: 32px;
+        @media (max-width: 370px) {
+          font-size: 22px;
+        }
+      }
     }
-  }
+
 }
 
 .nj-h2 {
@@ -30,14 +31,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-
+  color: $mainColor;
   @media (max-width: 1200px) {
     font-size: 40px;
     line-height: 150%;
     @media (max-width: 1024px) {
       font-size: 30px;
-          @media (max-width: 370px) {
-            font-size: 22px;
+          @media (max-width: 350px) {
+            font-size: 20px !important;
           }
     }
   }
@@ -104,6 +105,9 @@
   color: $btnColor;
   @media (max-width: 450px){
     padding: 5px;
+    @media (max-width: 350px) {
+      font-size: 24px !important;
+    }
   }
 }
 .nj-redText {
@@ -174,10 +178,13 @@
   }
 }
 .nj-container-fluid{
-  max-width: 1360px;
+  max-width: 1580px;
   padding: 0 20px;
   margin: 0 auto;
   width: 100%;
+  @media (max-width: 800px) {
+    padding: 0 10px;
+  }
 }
 .nj-titleSmall{
   font-family: "Comfortaa", cursive;
