@@ -168,9 +168,16 @@
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
+  width: 100%;
   @media (max-width: 800px) {
     padding: 0 10px;
   }
+}
+.nj-container-fluid{
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 .nj-titleSmall{
   font-family: "Comfortaa", cursive;
