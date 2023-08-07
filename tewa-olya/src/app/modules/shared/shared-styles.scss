@@ -178,13 +178,20 @@
   }
 }
 .nj-container-fluid{
-  max-width: 1580px;
+  max-width: 1600px;
   padding: 0 20px;
   margin: 0 auto;
   width: 100%;
-  @media (max-width: 800px) {
-    padding: 0 10px;
+  @media (max-width: 1660px){
+    max-width: 1320px;
+    @media (max-width: 1440px){
+      max-width: 1240px;
+      @media (max-width: 800px) {
+        padding: 0 10px;
+      }
+    }
   }
+
 }
 .nj-titleSmall{
   font-family: "Comfortaa", cursive;

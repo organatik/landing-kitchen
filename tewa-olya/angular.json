@@ -33,7 +33,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "https://organatik.github.io/landing-kitchen/",
+              "baseHref": "http://www.kulinaria-u-teshchi-oli.com.ua/",
               "budgets": [
                 {
                   "type": "initial",
