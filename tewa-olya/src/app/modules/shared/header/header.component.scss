@@ -119,6 +119,9 @@ header {
       border-bottom: 2px solid $btnBg;
       font-weight: bold;
       width: 150%;
+      @media (max-width: 600px){
+        width: initial;
+      }
     }
     .link:active{
       transition: .5s ease;

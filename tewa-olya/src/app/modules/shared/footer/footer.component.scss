@@ -78,9 +78,12 @@
           flex: 1 1 50%;
         }
 
-        .links a{
-          p:hover{
+        .links a:hover{
+          p{
             color: #369c50;
+          }
+          svg{
+            fill: #369c50;;
           }
         }
       }
@@ -127,6 +130,16 @@
 
   a {
     color: $textTransparent;
+  }
+
+  svg{
+    fill: $textTransparent;
+    transition: .5s ease;
+  }
+
+  svg:hover{
+    transition: .5s ease;
+    fill: $btnBg !important;
   }
 
   .row-contact {
