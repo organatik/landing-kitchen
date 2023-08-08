@@ -135,6 +135,12 @@
   svg{
     fill: $textTransparent;
     transition: .5s ease;
+    height: 30px;
+    width: 30px;
+    path{
+      height: 50px;
+      width: 50px;
+    }
   }
 
   svg:hover{
@@ -144,7 +150,7 @@
 
   .row-contact {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     transition: all .5s ease;
     width: 100%;
     @media (max-width: 700px){
@@ -192,18 +198,6 @@
   p {
     color: $btnColor;
   }
-}
-.mat-icon {
-  width: 35px;
-  display: flex;
-  align-items: center;
-  @media (max-width: 700px){
-    height: 24px;
-    width: 30px;
-  }
-}
-.material-symbols-outlined{
-  width: 35px;
 }
 
 .opacity-link{
